@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on MrYupengfei</title>
-    <link>https://yupengfei.space/posts/</link>
+    <link>http://localhost:46345/posts/</link>
     <description>Recent content in Posts on MrYupengfei</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Jul 2025 22:03:46 +0800</lastBuildDate>
-    <atom:link href="https://yupengfei.space/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:46345/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Business</title>
-      <link>https://yupengfei.space/posts/business/</link>
+      <link>http://localhost:46345/posts/business/</link>
       <pubDate>Tue, 08 Jul 2025 22:03:46 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/business/</guid>
+      <guid>http://localhost:46345/posts/business/</guid>
       <description>&lt;h1 id=&#34;于鹏飞的商业主页&#34;&gt;于鹏飞的商业主页&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://busines.yupengfei.sapce&#34;&gt;https://busines.yupengfei.sapce&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personal</title>
-      <link>https://yupengfei.space/posts/personal/</link>
+      <link>http://localhost:46345/posts/personal/</link>
       <pubDate>Tue, 08 Jul 2025 22:03:34 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/personal/</guid>
+      <guid>http://localhost:46345/posts/personal/</guid>
       <description>&lt;h1 id=&#34;于鹏飞的个人主页&#34;&gt;于鹏飞的个人主页&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://personal.yupengfei.sapce&#34;&gt;https://personal.yupengfei.sapce&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
