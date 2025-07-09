@@ -2,52 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MrYupengfei</title>
-    <link>https://yupengfei.space/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on MrYupengfei</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 09 Jul 2025 22:37:43 +0800</lastBuildDate>
-    <atom:link href="https://yupengfei.space/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>https://yupengfei.space/posts/contact/</link>
+      <link>http://localhost:1313/posts/contact/</link>
       <pubDate>Wed, 09 Jul 2025 22:37:43 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/contact/</guid>
+      <guid>http://localhost:1313/posts/contact/</guid>
       <description>&lt;h2 id=&#34;wechat&#34;&gt;WeChat&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mr_yupengfei&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:mr_yupengfei@foxmail.com&#34;&gt;mr_yupengfei@foxmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:yupengfei.edu@gmail.com&#34;&gt;yupengfei.edu@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Webs</title>
-      <link>https://yupengfei.space/posts/webs/</link>
+      <link>http://localhost:1313/posts/webs/</link>
       <pubDate>Wed, 09 Jul 2025 22:13:50 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/webs/</guid>
+      <guid>http://localhost:1313/posts/webs/</guid>
       <description>&lt;h1 id=&#34;本网站镜像网站&#34;&gt;本网站镜像网站&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei.space&#34;&gt;https://yupengfei.space&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mryupengfei.github.io&#34;&gt;https://mryupengfei.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei1074064684.gitee.io&#34;&gt;https://yupengfei1074064684.gitee.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;（备注：20250709，Gitee Pages 暂停提供服务）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;社交网站主页&#34;&gt;社交网站主页&lt;/h1&gt;&#xA;&lt;h2 id=&#34;blog&#34;&gt;Blog&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.yupengfei.space&#34;&gt;https://blog.yupengfei.space&lt;/a&gt;&#xA;（备注：博客服务器不定时开放）&lt;/p&gt;&#xA;&lt;h2 id=&#34;github&#34;&gt;Github&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/mryupengfei&#34;&gt;https://github.com/mryupengfei&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;gitee&#34;&gt;Gitee&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684&#34;&gt;https://gitee.com/yupengfei1074064684&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>网站列表</title>
-      <link>https://yupengfei.space/notification/notice_1/</link>
+      <link>http://localhost:1313/notification/notice_1/</link>
       <pubDate>Wed, 09 Jul 2025 21:39:19 +0800</pubDate>
-      <guid>https://yupengfei.space/notification/notice_1/</guid>
+      <guid>http://localhost:1313/notification/notice_1/</guid>
       <description>&lt;h1 id=&#34;本网站镜像网站&#34;&gt;本网站镜像网站&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://yupengfei.space&#34;&gt;https://yupengfei.space&lt;/a&gt;&#xA;&lt;a href=&#34;https://mryupengfei.github.io&#34;&gt;https://mryupengfei.github.io&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>https://yupengfei.space/posts/blog/</link>
-      <pubDate>Tue, 08 Jul 2025 22:03:34 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/blog/</guid>
-      <description>&lt;h1 id=&#34;于鹏飞的个人博客&#34;&gt;于鹏飞的个人博客&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://blog.yupengfei.space&#34;&gt;https://blog.yupengfei.space&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Homepage</title>
-      <link>https://yupengfei.space/posts/homepage/</link>
-      <pubDate>Tue, 08 Jul 2025 22:03:34 +0800</pubDate>
-      <guid>https://yupengfei.space/posts/homepage/</guid>
-      <description>&lt;h1 id=&#34;于鹏飞的网站列表&#34;&gt;于鹏飞的网站列表&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://yupengfei.space&#34;&gt;https://yupengfei.space&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>于鹏飞的网站列表</title>
-      <link>https://yupengfei.space/about/homepage/</link>
+      <link>http://localhost:1313/about/homepage/</link>
       <pubDate>Tue, 08 Jul 2025 22:03:34 +0800</pubDate>
-      <guid>https://yupengfei.space/about/homepage/</guid>
+      <guid>http://localhost:1313/about/homepage/</guid>
       <description>&lt;h1 id=&#34;于鹏飞的网站列表&#34;&gt;于鹏飞的网站列表&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://yupengfei.space&#34;&gt;https://yupengfei.space&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
