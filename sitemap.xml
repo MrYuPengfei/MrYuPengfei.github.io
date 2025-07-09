@@ -2,32 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-09T22:12:21+08:00</lastmod>
+    <loc>https://yupengfei.space/posts/contact/</loc>
+    <lastmod>2025-07-09T22:37:43+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-09T22:12:21+08:00</lastmod>
+    <loc>https://yupengfei.space/</loc>
+    <lastmod>2025-07-09T22:37:43+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notification/</loc>
+    <loc>https://yupengfei.space/posts/</loc>
+    <lastmod>2025-07-09T22:37:43+08:00</lastmod>
+  </url><url>
+    <loc>https://yupengfei.space/posts/webs/</loc>
+    <lastmod>2025-07-09T22:13:50+08:00</lastmod>
+  </url><url>
+    <loc>https://yupengfei.space/notification/</loc>
     <lastmod>2025-07-09T21:39:19+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notification/notice_1/</loc>
+    <loc>https://yupengfei.space/notification/notice_1/</loc>
     <lastmod>2025-07-09T21:39:19+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://yupengfei.space/about/</loc>
     <lastmod>2025-07-08T22:03:34+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blog/</loc>
+    <loc>https://yupengfei.space/posts/blog/</loc>
     <lastmod>2025-07-08T22:03:34+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/homepage/</loc>
+    <loc>https://yupengfei.space/posts/homepage/</loc>
     <lastmod>2025-07-08T22:03:34+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/homepage/</loc>
+    <loc>https://yupengfei.space/about/homepage/</loc>
     <lastmod>2025-07-08T22:03:34+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://yupengfei.space/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://yupengfei.space/tags/</loc>
   </url>
 </urlset>
