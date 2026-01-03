@@ -2,40 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mryupengfei.github.io/posts/about/</loc>
+    <loc>https://blog.yupengfei.xyz/posts/about/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/categories/</loc>
+    <loc>https://blog.yupengfei.xyz/categories/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/</loc>
+    <loc>https://blog.yupengfei.xyz/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/categories/one/</loc>
+    <loc>https://blog.yupengfei.xyz/categories/one/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/posts/</loc>
+    <loc>https://blog.yupengfei.xyz/posts/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/categories/two/</loc>
+    <loc>https://blog.yupengfei.xyz/categories/two/</loc>
     <lastmod>2026-01-01T20:49:47+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/posts/about-this-site/</loc>
+    <loc>https://blog.yupengfei.xyz/posts/about-this-site/</loc>
     <lastmod>2026-01-01T20:49:37+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/posts/karl-marx/</loc>
-    <lastmod>2026-01-01T20:49:37+08:00</lastmod>
+    <loc>https://blog.yupengfei.xyz/posts/virtual-partners/</loc>
+    <lastmod>2025-03-01T20:49:37+08:00</lastmod>
   </url><url>
-    <loc>https://mryupengfei.github.io/pages/about/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/blog/</loc>
   </url><url>
-    <loc>https://mryupengfei.github.io/pages/contact/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/about/</loc>
   </url><url>
-    <loc>https://mryupengfei.github.io/pages/more-themes/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/contact/</loc>
   </url><url>
-    <loc>https://mryupengfei.github.io/pages/this-theme/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/more-themes/</loc>
   </url><url>
-    <loc>https://mryupengfei.github.io/pages/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/this-theme/</loc>
   </url><url>
-    <loc>https://mryupengfei.github.io/tags/</loc>
+    <loc>https://blog.yupengfei.xyz/pages/</loc>
+  </url><url>
+    <loc>https://blog.yupengfei.xyz/tags/</loc>
   </url>
 </urlset>
