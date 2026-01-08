@@ -54,25 +54,78 @@
 <div class="container">
   <div class="wrapper">
     
-<div class="row">
-<div class="col-md-8">
-<article class="post">
+<div class="row main-body">
+<div class="col-md-8 post-wrapper">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
+          <header class="post-header post-header-base">
+            <h1 class="post-title" itemprop="name headline">使用自定义域名访问 GitLab 私有仓库</h1>
+            
+            <p class="post-meta"><time datetime='2026-01-08T10:44:45&#43;08:00' itemprop="datePublished">January 8, 2026</time></p>
+            
+                 
+          </header>
 
-  <div class="post-content">
-    <h2 id="我的博客">我的博客</h2>
-<p><a href="https://blog.yupengfei.xyz">https://blog.yupengfei.xyz</a>
-<a href="https://blog.yupengfei.xyz"><figure class="flex flex-col items-center justify-center">
-    <img src="blog.jpg" alt="我的博客封面" title="点击进入我的个人博客"></figure></a></p>
+          <div class="post-content" itemprop="articleBody">
+            <p>在日常开发中，我们常常需要通过 git clone 从 GitLab 私有仓库拉取代码。如果你为 GitLab 配置了自定义域名，却在项目页面看到的 Clone 地址依然是 IP + 端口，每次复制后还要手动替换，实在令人头疼。</p>
+<p>下面分享一个简单、有效的方法，只需修改一处配置，重启服务，即可让项目页面自动显示你的域名地址，彻底告别“动手改链接”的烦恼。</p>
+<h1 id="一问题描述">一、问题描述</h1>
+<p>已为 GitLab 配置了自定义域名（如 git.example.com），并在 DNS 解析和防火墙规则中完成相应设置。
+在浏览器打开私有仓库项目页面时，Clone 地址仍然显示为 http://192.168.1.100:8929/your-group/your-project.git，而非 <a href="https://git.example.com/your-group/your-project.git">https://git.example.com/your-group/your-project.git</a>。
+每次复制后都要手动替换，非常不方便，也容易出错。</p>
+<h1 id="二解决方案">二、解决方案</h1>
+<p>修改 GitLab Rails 组件的主配置文件 gitlab.yml，将默认的主机名和端口改为你的域名。操作步骤如下：</p>
+<h2 id="-核心适配-打开配置文件">🎯 核心适配 打开配置文件</h2>
+<p>sudo vim /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
+`
+定位 external_url 配置
+在文件中找到类似如下的段落：</p>
+<h2 id="gitlab-settings">GitLab settings</h2>
+<p>gitlab:</p>
+<h1 id="web-server-settings">Web server settings</h1>
+<p>host: 192.168.1.100<br>
+port: 8929<br>
+https: false
+修改为自定义域名
+将 host 和 port 字段替换成你的域名，并根据需要启用 HTTPS：</p>
+<p>gitlab:
+host: git.example.com
+port: 443
+https: true
+保存并退出编辑器
+在 Vim 中输入 :wq 保存并退出。
+重启 GitLab 服务</p>
+<p>sudo gitlab-ctl restart
+验证效果
+再次打开项目页面，Clone 地址将变为：</p>
+<p><a href="https://git.example.com/your-group/your-project.git">https://git.example.com/your-group/your-project.git</a>
+从此，无需再手动替换链接，直接复制即可使用。</p>
+<h1 id="三小贴士">三、小贴士</h1>
+<p>如果你使用的是 HTTP（非 HTTPS），将 port 设置为 80，并将 https: false。
+修改配置后，若页面仍然显示旧地址，可清除浏览器缓存或尝试重启服务器后再访问。
+若使用 Omnibus 安装包，也可通过修改 /etc/gitlab/gitlab.rb 中的 external_url 来统一设置域名，操作更简便。</p>
 
-  </div>
+          </div>
 
-</article>
+    </article>
+    <div class="row">
+        
+    </div>
+    
+    <div class="row">
+            <ul class="pager">
+             
+                    <li><a class="next" href="https:/yupengfei.site/pages/legal/">&laquo; Legal</a></li>
+              
+              
+                <li><a class="previous" href="https:/yupengfei.site/posts/about/">About Me &raquo;</a></li>
+              
+            </ul>
+    </div>
 </div>
-<div class="col-md-4 mt20">
+
+
+    <div class="col-md-4 mt20">
         <div class="post-img">
             
             <img width="600" src="https:/yupengfei.site/images/gopher.jpg" alt="webjeda">
@@ -108,7 +161,10 @@
         <br>
 
 </div>
+
+
 </div>
+
 
 
 
