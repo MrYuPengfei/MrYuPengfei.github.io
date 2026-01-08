@@ -75,9 +75,8 @@
                   </div>
                   
                   <div class="panel-body"><small>
-                    在日常开发中，我们常常需要通过 git clone 从 GitLab 私有仓库拉取代码。如果你为 GitLab 配置了自定义域名，却在项目页面看到的 Clone 地址依然是 IP + 端口，每次复制后还要手动替换，实在令人头疼。
-下面分享一个简单、有效的方法，只需修改一处配置，重启服务，即可让项目页面自动显示你的域名地址，彻底告别“动手改链接”的烦恼。
-一、 …</small>
+                    🎯 关键 一部分gitlab的配置可以通过在web端通过登录root用户进行admin修改。部分需要修改服务器下关于gitlab的配置文件。
+Gitlab主要配置文件 一、GitLab 最核心的配置文件（99% 的修改都在这） 1. /etc/gitlab/gitlab.rb（主配置文件，必记！） 作用：GitLab 所有全局配置的「入口文件」，包括外部访问 …</small>
                   </div>
                 </div>
                 </a>

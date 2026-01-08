@@ -67,42 +67,108 @@
           </header>
 
           <div class="post-content" itemprop="articleBody">
-            <p>在日常开发中，我们常常需要通过 git clone 从 GitLab 私有仓库拉取代码。如果你为 GitLab 配置了自定义域名，却在项目页面看到的 Clone 地址依然是 IP + 端口，每次复制后还要手动替换，实在令人头疼。</p>
-<p>下面分享一个简单、有效的方法，只需修改一处配置，重启服务，即可让项目页面自动显示你的域名地址，彻底告别“动手改链接”的烦恼。</p>
-<h1 id="一问题描述">一、问题描述</h1>
-<p>已为 GitLab 配置了自定义域名（如 git.example.com），并在 DNS 解析和防火墙规则中完成相应设置。
-在浏览器打开私有仓库项目页面时，Clone 地址仍然显示为 http://192.168.1.100:8929/your-group/your-project.git，而非 <a href="https://git.example.com/your-group/your-project.git">https://git.example.com/your-group/your-project.git</a>。
-每次复制后都要手动替换，非常不方便，也容易出错。</p>
-<h1 id="二解决方案">二、解决方案</h1>
-<p>修改 GitLab Rails 组件的主配置文件 gitlab.yml，将默认的主机名和端口改为你的域名。操作步骤如下：</p>
-<h2 id="-核心适配">🎯 核心适配</h2>
-<p>`
-定位 external_url 配置
-在文件中找到类似如下的段落：</p>
-<h2 id="gitlab-settings">GitLab settings</h2>
-<p>gitlab:</p>
-<h1 id="web-server-settings">Web server settings</h1>
-<p>host: 192.168.1.100<br>
-port: 8929<br>
-https: false
-修改为自定义域名
-将 host 和 port 字段替换成你的域名，并根据需要启用 HTTPS：</p>
-<p>gitlab:
-host: git.example.com
-port: 443
-https: true
-保存并退出编辑器
-在 Vim 中输入 :wq 保存并退出。
-重启 GitLab 服务</p>
-<p>sudo gitlab-ctl restart
-验证效果
-再次打开项目页面，Clone 地址将变为：</p>
-<p><a href="https://git.example.com/your-group/your-project.git">https://git.example.com/your-group/your-project.git</a>
-从此，无需再手动替换链接，直接复制即可使用。</p>
-<h1 id="三小贴士">三、小贴士</h1>
-<p>如果你使用的是 HTTP（非 HTTPS），将 port 设置为 80，并将 https: false。
-修改配置后，若页面仍然显示旧地址，可清除浏览器缓存或尝试重启服务器后再访问。
-若使用 Omnibus 安装包，也可通过修改 /etc/gitlab/gitlab.rb 中的 external_url 来统一设置域名，操作更简便。</p>
+            <h1 id="-关键">🎯 关键</h1>
+<p>一部分gitlab的配置可以通过在web端通过登录root用户进行admin修改。部分需要修改服务器下关于gitlab的配置文件。</p>
+<h1 id="gitlab主要配置文件">Gitlab主要配置文件</h1>
+<h3 id="一gitlab-最核心的配置文件99-的修改都在这">一、GitLab 最核心的配置文件（99% 的修改都在这）</h3>
+<h4 id="1-etcgitlabgitlabrb主配置文件必记">1. <code>/etc/gitlab/gitlab.rb</code>（主配置文件，必记！）</h4>
+<ul>
+<li><strong>作用</strong>：GitLab 所有全局配置的「入口文件」，包括外部访问 URL、端口、存储路径、邮件、SSL、LDAP、内置组件（Nginx/PostgreSQL/Redis）等，是你唯一需要手动修改的配置文件。</li>
+<li><strong>特点</strong>：默认全是注释（<code>#</code> 开头），只需要取消注释并修改对应参数，无需手写配置；修改后不会立即生效，需要执行命令生成实际配置。</li>
+<li><strong>新手常用配置示例</strong>：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># 1. 设置GitLab外部访问地址（最基础配置）</span>
+</span></span><span style="display:flex;"><span>external_url <span style="color:#e6db74">&#39;https://gitlab.yourdomain.com&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. 修改GitLab内置Nginx的端口（默认80/443）</span>
+</span></span><span style="display:flex;"><span>nginx<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;listen_port&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>nginx<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;listen_https&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>  <span style="color:#75715e"># 若用HTTP访问</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 设置数据存储路径（默认/var/opt/gitlab）</span>
+</span></span><span style="display:flex;"><span>git_data_dirs({ <span style="color:#e6db74">&#34;default&#34;</span> <span style="color:#f92672">=&gt;</span> { <span style="color:#e6db74">&#34;path&#34;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#34;/data/gitlab/git-data&#34;</span> } })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4. 邮件配置（发送通知）</span>
+</span></span><span style="display:flex;"><span>gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;smtp_enable&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;smtp_address&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;smtp.163.com&#34;</span>
+</span></span><span style="display:flex;"><span>gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;smtp_port&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">465</span>
+</span></span></code></pre></div><h4 id="2-varoptgitlabgitlab-railsetcgitlabyml实际生效的应用配置">2. <code>/var/opt/gitlab/gitlab-rails/etc/gitlab.yml</code>（实际生效的应用配置）</h4>
+<ul>
+<li><strong>作用</strong>：由 <code>/etc/gitlab/gitlab.rb</code> 生成的「最终生效配置文件」，包含 GitLab Rails 应用的所有细节配置。</li>
+<li><strong>注意</strong>：<strong>不要手动修改</strong>！修改后会被 <code>gitlab-ctl reconfigure</code> 覆盖，所有改动都要在 <code>gitlab.rb</code> 中完成。</li>
+</ul>
+<h3 id="二gitlab-各组件的专属配置文件由-gitlabrb-生成">二、GitLab 各组件的专属配置文件（由 gitlab.rb 生成）</h3>
+<p>GitLab 是「一站式包」，内置 Nginx/PostgreSQL/Redis 等组件，它们的配置文件由 <code>gitlab.rb</code> 生成，路径如下：</p>
+<table>
+  <thead>
+      <tr>
+          <th>组件</th>
+          <th>配置文件路径</th>
+          <th>作用</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>内置 Nginx</td>
+          <td><code>/var/opt/gitlab/nginx/conf/gitlab-http.conf</code></td>
+          <td>GitLab 访问的 Nginx 配置</td>
+      </tr>
+      <tr>
+          <td>PostgreSQL</td>
+          <td><code>/var/opt/gitlab/postgresql/data/postgresql.conf</code></td>
+          <td>数据库配置</td>
+      </tr>
+      <tr>
+          <td>Redis</td>
+          <td><code>/var/opt/gitlab/redis/redis.conf</code></td>
+          <td>缓存服务配置</td>
+      </tr>
+      <tr>
+          <td>GitLab Shell</td>
+          <td><code>/var/opt/gitlab/gitlab-shell/config.yml</code></td>
+          <td>Git 命令行/SSH 配置</td>
+      </tr>
+      <tr>
+          <td>Sidekiq</td>
+          <td><code>/var/opt/gitlab/gitlab-rails/etc/sidekiq.yml</code></td>
+          <td>异步任务队列配置</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="三其他辅助配置文件">三、其他辅助配置文件</h3>
+<h4 id="1-日志相关">1. 日志相关</h4>
+<ul>
+<li>日志存储路径：<code>/var/log/gitlab/</code>（各组件日志分目录存放，如 <code>gitlab-rails/</code>、<code>nginx/</code>）</li>
+<li>日志配置：在 <code>gitlab.rb</code> 中修改（如日志级别、保留天数）：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>logging<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;log_level&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;info&#39;</span>  <span style="color:#75715e"># 日志级别：debug/info/warn/error</span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;keep_rails_logs_for_days&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>  <span style="color:#75715e"># 日志保留7天</span>
+</span></span></code></pre></div><h4 id="2-备份权限配置">2. 备份/权限配置</h4>
+<ul>
+<li>备份配置：在 <code>gitlab.rb</code> 中设置备份路径、保留时间：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;backup_path&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/data/gitlab/backups&#34;</span>
+</span></span><span style="display:flex;"><span>gitlab_rails<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;backup_keep_time&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">604800</span>  <span style="color:#75715e"># 备份保留7天（秒）</span>
+</span></span></code></pre></div><ul>
+<li>权限配置：<code>/etc/gitlab/permissions.json</code>（定义各目录/文件的默认权限，一般无需修改）。</li>
+</ul>
+<h3 id="四修改配置后的生效步骤核心新手必看">四、修改配置后的生效步骤（核心！新手必看）</h3>
+<p>修改 <code>/etc/gitlab/gitlab.rb</code> 后，必须执行以下命令让配置生效：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 1. 重新生成配置并应用（核心命令，覆盖所有组件配置）</span>
+</span></span><span style="display:flex;"><span>sudo gitlab-ctl reconfigure
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. （可选）重启GitLab所有服务（确保配置生效）</span>
+</span></span><span style="display:flex;"><span>sudo gitlab-ctl restart
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3. 验证配置是否生效</span>
+</span></span><span style="display:flex;"><span>sudo gitlab-ctl status  <span style="color:#75715e"># 查看所有组件状态</span>
+</span></span><span style="display:flex;"><span>sudo gitlab-rake gitlab:check SANITIZE<span style="color:#f92672">=</span>true  <span style="color:#75715e"># 检查GitLab健康状态</span>
+</span></span></code></pre></div><h3 id="总结">总结</h3>
+<ol>
+<li><strong>核心配置文件</strong>：<code>/etc/gitlab/gitlab.rb</code>（唯一需要手动修改的文件）；</li>
+<li><strong>生成的配置文件</strong>：<code>/var/opt/gitlab/</code> 下的各组件配置（不要手动改）；</li>
+<li><strong>生效关键</strong>：修改 <code>gitlab.rb</code> 后执行 <code>gitlab-ctl reconfigure</code>，而非直接重启服务；</li>
+<li><strong>新手重点</strong>：先改 <code>external_url</code> 配置访问地址，再根据需求调整端口、存储路径、邮件等。</li>
+</ol>
 
           </div>
 
