@@ -75,9 +75,8 @@
 每次复制后都要手动替换，非常不方便，也容易出错。</p>
 <h1 id="二解决方案">二、解决方案</h1>
 <p>修改 GitLab Rails 组件的主配置文件 gitlab.yml，将默认的主机名和端口改为你的域名。操作步骤如下：</p>
-<h2 id="-核心适配-打开配置文件">🎯 核心适配 打开配置文件</h2>
-<p>sudo vim /opt/gitlab/embedded/service/gitlab-rails/config/gitlab.yml
-`
+<h2 id="-核心适配">🎯 核心适配</h2>
+<p>`
 定位 external_url 配置
 在文件中找到类似如下的段落：</p>
 <h2 id="gitlab-settings">GitLab settings</h2>
