@@ -1,3 +1,5 @@
+# ❌ 其他域名：完全禁止Google及所有爬虫访问
+User-agent: Googlebot
+Disallow: /
 User-agent: *
-Allow: /
-Sitemap: https://mryupengfei.github.io/sitemap.xml
+Disallow: /

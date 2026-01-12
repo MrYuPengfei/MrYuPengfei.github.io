@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 技术分享 Public Site</title>
+    <link>https:/yupengfei.site/post/</link>
+    <description>Recent content in Posts on 技术分享 Public Site</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <managingEditor>mr_yupengfei@foxmail.com (MrYuPengfei)</managingEditor>
+    <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <atom:link href="https:/yupengfei.site/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About This Site</title>
+      <link>https:/yupengfei.site/post/about-this-site/</link>
+      <pubDate>Thu, 01 Jan 2026 20:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/about-this-site/</guid>
+      <description>&lt;p&gt;This website is a static site generated using the Hugo framework. It is deployed on an Nginx server and hosted on the GitHub.io platform for the purpose of sharing information technology knowledge.&lt;/p&gt;&#xA;&lt;p&gt;本网站是使用Hugo框架生成的静态网站。部署于Nginx服务器以及github.io托管平台，用于分享信息技术。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virtual Partners</title>
+      <link>https:/yupengfei.site/post/virtual-partners/</link>
+      <pubDate>Sat, 01 Mar 2025 20:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/virtual-partners/</guid>
+      <description>&lt;h1 id=&#34;基于qt的ai桌面伙伴&#34;&gt;基于Qt的AI桌面伙伴&lt;/h1&gt;&#xA;&lt;p&gt;基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。&lt;/p&gt;&#xA;&lt;p&gt;(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)&lt;/p&gt;&#xA;&lt;h1 id=&#34;三种版本&#34;&gt;三种版本&lt;/h1&gt;&#xA;&lt;h2 id=&#34;版本一基于pyqt5和pygame的版本&#34;&gt;版本一：基于PyQt5和PyGame的版本&lt;/h2&gt;&#xA;&lt;p&gt;（提供msi安装包，无内存溢出的风险）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/yuanshen-desktoppet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitee.com/yupengfei1074064684/yuanshen-desktoppet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/MrYuPengfei/yuanshen-desktoppet&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/MrYuPengfei/yuanshen-desktoppet&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;WindowsNT原神桌面宠物安装向导。附上百度网链接：&lt;/p&gt;&#xA;&lt;p&gt;通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6&lt;/p&gt;&#xA;&lt;h2 id=&#34;版本二基于版本一和ollama人工智能模型的版本由于ai服务器到期目前暂停ai服务&#34;&gt;版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）&lt;/h2&gt;&#xA;&lt;p&gt;（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/LlamaVirtualPartners&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitee.com/yupengfei1074064684/LlamaVirtualPartners&lt;/a&gt;&lt;/p&gt;&#xA;&lt;img src=&#34;https:/yupengfei.site/post/virtual-partners/ai-pet.jpg&#34; alt=&#34;ai-pet&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;h2 id=&#34;版本三推荐基于qt6的跨平台版本&#34;&gt;版本三（推荐)：基于Qt6的跨平台版本：&lt;/h2&gt;&#xA;&lt;p&gt;（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684/virtual-partners4-pc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitee.com/yupengfei1074064684/virtual-partners4-pc&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/MrYuPengfei/VirtualPartners&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/MrYuPengfei/VirtualPartners&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;windows11&#34;&gt;Windows11&lt;/h2&gt;&#xA;&lt;p&gt;提供支持windows11的安装向导：&lt;/p&gt;&#xA;&lt;p&gt;通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: &lt;a href=&#34;https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3&lt;/a&gt; 提取码: vmu3 &amp;ndash;来自百度网盘超级会员v7的分享&lt;/p&gt;&#xA;&lt;img src=&#34;https:/yupengfei.site/post/virtual-partners/virtual-partners.jpg&#34; alt=&#34;virtual-partners.jpg&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;h2 id=&#34;linux-mint-cinnamon-edition&#34;&gt;Linux Mint Cinnamon Edition&lt;/h2&gt;&#xA;&lt;p&gt;尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。&lt;/p&gt;&#xA;&lt;img src=&#34;https:/yupengfei.site/post/virtual-partners/mint-qt.jpg&#34; alt=&#34;mint-qt&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;h1 id=&#34;自定义&#34;&gt;自定义&lt;/h1&gt;&#xA;&lt;p&gt;可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo v0.119.0</title>
+      <link>https:/yupengfei.site/post/hugo-v0-119/</link>
+      <pubDate>Sun, 24 Sep 2023 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/hugo-v0-119/</guid>
+      <description>&lt;img src=&#34;https:/yupengfei.site/post/hugo-v0-119/hugo-logo.svg&#34; alt=&#34;Hugo&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;p&gt;This version is built with Go 1.21.1 which contains some relevant security fixes for the html/template package, see &lt;a href=&#34;https://github.com/golang/go/issues/62196&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Issue 62196&lt;/a&gt; and &lt;a href=&#34;https://github.com/golang/go/issues/62197&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Issue 62197&lt;/a&gt;. This is the main reason Hugo 0.119.0 is released sooner rather than later. But this release also comes with a dependency refresh and some useful image processing improvements:&lt;/p&gt;&#xA;&lt;p&gt;A new general-purpose &lt;a href=&#34;https://gohugo.io/content-management/image-processing/#process&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Process&lt;/a&gt; method and filter.&#xA;A new &lt;a href=&#34;https://gohugo.io/functions/images/#opacity&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opacity&lt;/a&gt; filter.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bootstrap 5.3.0</title>
+      <link>https:/yupengfei.site/post/bootstrap-5-3-0/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/bootstrap-5-3-0/</guid>
+      <description>&lt;img src=&#34;https:/yupengfei.site/post/bootstrap-5-3-0/bootstrap-5-3.png&#34; alt=&#34;Bootstrap 5 3&#34; class=&#34;img-fluid&#34;&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;It’s official, the final stable release of v5.3.0 has landed! It’s been a monumental effort to revamp our codebase for CSS variables and color modes, one that will see continued changes leading up to an eventual Bootstrap 6. And we’re so excited to finally ship it!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;On top of all the work that’s gone into this release, a lot has happened behind the scenes since we shipped our pre-releases. Keep reading to learn everything that’s &lt;a href=&#34;https://blog.getbootstrap.com/2023/05/30/bootstrap-5-3-0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;new in v5.3.0&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo v0.100.2</title>
+      <link>https:/yupengfei.site/post/hugo-v0-100/</link>
+      <pubDate>Wed, 08 Jun 2022 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/hugo-v0-100/</guid>
+      <description>&lt;img src=&#34;https:/yupengfei.site/post/hugo-v0-100/hugo-logo.svg&#34; alt=&#34;Hugo&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;p&gt;This release is mostly motivated by the fix for the panic experienced by people having blackfriday configured as defaultMarkdownHandler (&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/9968&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#9968&lt;/a&gt;). The Blackfriday support was removed in Hugo v0.100.0 after being deprecated with a warning for a long time.&lt;/p&gt;&#xA;&lt;p&gt;v0.100.1 fix panic with markdownify/RenderString with shortcode on Page with no content file.&lt;/p&gt;&#xA;&lt;p&gt;$page.RenderString (see &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/6703&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#6703&lt;/a&gt;) finally supports shortcodes, and shortcode improvements is the main theme in Hugo 0.100.0.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo Bootstrap Theme alpha</title>
+      <link>https:/yupengfei.site/post/hugo-bootstrap-theme/</link>
+      <pubDate>Sun, 22 May 2022 13:35:02 +0100</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/hugo-bootstrap-theme/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Hugo theme for a secure, blazing fast and SEO-ready static website, using Bootstrap 5.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Open-source MIT Licensed Hugo Theme, using Bootstrap 5.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;🛡️ Security aware&lt;/p&gt;&#xA;&lt;p&gt;Get A+ scores on Mozilla Observatory out of the box. Easily change the default Security Headers to suit your needs.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;⚡ Fast by default&lt;/p&gt;&#xA;&lt;p&gt;Get 100 scores on Google Lighthouse by default. Hugo Bootstrap Theme removes unused css, prefetches links, and lazy loads images.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;📈 SEO-ready&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo v0.99.1</title>
+      <link>https:/yupengfei.site/post/hugo-v0-99/</link>
+      <pubDate>Wed, 18 May 2022 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/hugo-v0-99/</guid>
+      <description>&lt;img src=&#34;https:/yupengfei.site/post/hugo-v0-99/hugo-logo.svg&#34; alt=&#34;Hugo&#34; class=&#34;img-fluid mb-5&#34;&gt;&lt;p&gt;Fix server regression for multihost sites (multiple languages with different baseURLs).&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bootstrap 5.2.0 beta</title>
+      <link>https:/yupengfei.site/post/bootstrap-5-2-0-beta/</link>
+      <pubDate>Fri, 13 May 2022 13:00:44 +0100</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>https:/yupengfei.site/post/bootstrap-5-2-0-beta/</guid>
+      <description>&lt;img src=&#34;https:/yupengfei.site/post/bootstrap-5-2-0-beta/bootstrap-5-2-0-beta.png&#34; alt=&#34;Bootstrap 5 2 0 Beta&#34; class=&#34;img-fluid&#34;&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;It’s the biggest release since v5 itself—&lt;strong&gt;Bootstrap v5.2.0-beta1 is here!&lt;/strong&gt; This release features redesigned docs, CSS variables for all our components, responsive offcanvas, new helpers and utilities, refined buttons and inputs, and lots of improvements under the hood.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Given the size of the update and time since our last release, we’re doing something different and shipping it as a beta first. &lt;a href=&#34;https://blog.getbootstrap.com/2022/05/13/bootstrap-5-2-0-beta/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Keep reading for details&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

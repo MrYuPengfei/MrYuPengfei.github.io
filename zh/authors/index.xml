@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on 技术分享 Public Site</title>
+    <link>https:/yupengfei.site/zh/authors/</link>
+    <description>Recent content in Authors on 技术分享 Public Site</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>mr_yupengfei@foxmail.com (MrYuPengfei)</managingEditor>
+    <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <atom:link href="https:/yupengfei.site/zh/authors/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
