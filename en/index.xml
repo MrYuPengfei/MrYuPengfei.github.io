@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术分享 Public Site</title>
-    <link>https:/yupengfei.site/en/</link>
+    <link>https://yupengfei.site/en/</link>
     <description>Recent content on 技术分享 Public Site</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <managingEditor>mr_yupengfei@foxmail.com (MrYuPengfei)</managingEditor>
     <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
     <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
-    <atom:link href="https:/yupengfei.site/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yupengfei.site/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https:/yupengfei.site/en/about/</link>
+      <link>https://yupengfei.site/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https:/yupengfei.site/en/about/</guid>
+      <guid>https://yupengfei.site/en/about/</guid>
       <description>&lt;h1 id=&#34;about-page-theme&#34;&gt;About Page Theme&lt;/h1&gt;&#xA;&lt;p&gt;Made with ❤️ by the &lt;em&gt;Hugo Bootstrap Theme&lt;/em&gt; &lt;a href=&#34;https://github.com/filipecarneiro/hugo-bootstrap-theme/graphs/contributors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;team&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>https:/yupengfei.site/en/contact/</link>
+      <link>https://yupengfei.site/en/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https:/yupengfei.site/en/contact/</guid>
+      <guid>https://yupengfei.site/en/contact/</guid>
       <description>&lt;h2 id=&#34;wechat&#34;&gt;WeChat&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mr_yupengfei&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tencent-qq&#34;&gt;Tencent QQ&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1074064684&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:mr_yupengfei@foxmail.com&#34;&gt;mr_yupengfei@foxmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:yupengfei.edu@gmail.com&#34;&gt;yupengfei.edu@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;orcid&#34;&gt;ORCID&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://orcid.org/0009-0009-1668-4543&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://orcid.org/0009-0009-1668-4543&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;simple-page&#34;&gt;Simple Page&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mryupengfei.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mryupengfei.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei.xyz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yupengfei.xyz&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei.site&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yupengfei.site&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;github&#34;&gt;Github&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/mryupengfei&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mryupengfei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;gitee&#34;&gt;Gitee&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitee.com/yupengfei1074064684&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
