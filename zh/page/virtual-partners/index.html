@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+    
+
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+    
+
+<link rel="stylesheet" href="../../../css/style.css" media="screen">
+
+    <title>Virtual Partners</title>
+
+<meta name="description" content="基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)
+三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11 提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。
+自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。
+">
+  
+
+
+<link rel="canonical" href="http://localhost:1313/zh/page/virtual-partners/">
+
+
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/page/virtual-partners/">
+
+
+
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/zh/page/virtual-partners/">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="Virtual Partners">
+<meta property="og:description" content="基于Qt的AI桌面伙伴
+基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)
+三种版本
+版本一：基于PyQt5和PyGame的版本
+（提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）
+（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本：
+（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11
+提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition
+尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。
+自定义
+可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/zh/page/virtual-partners/">
+    
+      
+        
+      
+      <meta property="og:image" content="http://localhost:1313/zh/page/virtual-partners/cat_hu_7dcf45dd7ff323ec.jpg">
+    
+    
+      
+        <meta property="og:image" content="http://localhost:1313/images/logo.svg">
+    
+    
+      
+        
+      
+        <meta property="og:image" content="http://localhost:1313/images/site-feature-image_hu_4da550a2335ee8d8.png">
+    
+  <meta property="article:section" content="page">
+  
+    <meta property="article:published_time" content="2025-03-01T20:49:37+08:00">
+  
+  
+    <meta property="article:modified_time" content="2026-01-12T21:41:40+08:00">
+  
+  <meta property="og:site_name" content="技术分享 Public Site">
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/zh/page/virtual-partners/cat_hu_7dcf45dd7ff323ec.jpg">
+  <meta name="twitter:title" content="Virtual Partners">
+<meta name="twitter:description" content="基于Qt的AI桌面伙伴
+基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。
+(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)
+三种版本
+版本一：基于PyQt5和PyGame的版本
+（提供msi安装包，无内存溢出的风险）：
+https://gitee.com/yupengfei1074064684/yuanshen-desktoppet
+https://github.com/MrYuPengfei/yuanshen-desktoppet
+WindowsNT原神桌面宠物安装向导。附上百度网链接：
+通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6
+版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）
+（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：
+https://gitee.com/yupengfei1074064684/LlamaVirtualPartners
+版本三（推荐)：基于Qt6的跨平台版本：
+（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：
+https://gitee.com/yupengfei1074064684/virtual-partners4-pc
+https://github.com/MrYuPengfei/VirtualPartners
+Windows11
+提供支持windows11的安装向导：
+通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享
+Linux Mint Cinnamon Edition
+尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。
+自定义
+可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。">
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Virtual Partners",
+  "image": "http://localhost:1313/zh/page/virtual-partners/cat.jpg",
+  "datePublished": "2025-03-01T20:49:37+08:00",
+  "dateModified": "2026-01-12T21:41:40+08:00",
+  "mainEntityOfPage": "http://localhost:1313/",
+  "publisher": {
+    "@type": "Organization",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/logo.svg"
+    },
+    "name": "技术分享 Public Site"
+  },
+  "wordcount" :  586 ,
+  "description": "基于Qt的AI桌面伙伴 基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。\n(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)\n三种版本 版本一：基于PyQt5和PyGame的版本 （提供msi安装包，无内存溢出的风险）：\nhttps://gitee.com/yupengfei1074064684/yuanshen-desktoppet\nhttps://github.com/MrYuPengfei/yuanshen-desktoppet\nWindowsNT原神桌面宠物安装向导。附上百度网链接：\n通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6\n版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务） （建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：\nhttps://gitee.com/yupengfei1074064684/LlamaVirtualPartners\n版本三（推荐)：基于Qt6的跨平台版本： （支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：\nhttps://gitee.com/yupengfei1074064684/virtual-partners4-pc\nhttps://github.com/MrYuPengfei/VirtualPartners\nWindows11 提供支持windows11的安装向导：\n通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3 提取码: vmu3 \u0026ndash;来自百度网盘超级会员v7的分享\nLinux Mint Cinnamon Edition 尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。\n自定义 可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。\n",
+  "keywords":  null 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:1313/favicon.png">
+
+</head>
+
+<body class="page single d-flex flex-column min-vh-100"><header class="main-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="../../../zh/">
+        
+        <img src="../../../images/logo.svg" alt="logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+        
+        技术分享 Public Site
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/">主页</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              博客
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../../../zh/tags/hugo" >
+                  Hugo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../zh/tags/bootstrap" >
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://blog.yupengfei.xyz" >
+                  Blog
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/page">特色页面</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/post">最新帖子</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/contact">联系站长</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/en/contact/" title='Contact' aria-label='Contact'>Contact</a>
+          </li>
+          
+          </ul>
+
+        
+        <div class="menu-language order-md-2">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ZH
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
+                <li>
+                  <a class="dropdown-item active" aria-current="true" href="../../../zh/page/virtual-partners/" title='Virtual Partners' aria-label='Virtual Partners'>
+                    中文
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" rel="alternate" href="../../../en/" hreflang="en" lang="en" title='技术分享 Public Site' aria-label='技术分享 Public Site'>
+                    English
+                  </a>
+                </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </nav>
+</header><div id="content">
+        <nav class="header-breadcrumb my-2" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb my-0">
+            
+            
+                
+                
+                    
+                
+                    
+                
+            
+                    <li class="breadcrumb-item"> <a href="../../../zh/">Home</a> </li>
+                
+            
+                    <li class="breadcrumb-item"> <a href="../../../zh/page/">Docs</a> </li>
+                
+            
+                <li class="breadcrumb-item active" aria-current="page">  Virtual Partners</li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+<div class="container py-3">
+  <h1 id="基于qt的ai桌面伙伴">基于Qt的AI桌面伙伴</h1>
+<p>基于Qt6的桌面伴侣，可以在Windows10/11和支持X11的Linux发行版（例如Mint/Ubuntu）上使用。</p>
+<p>(音乐和图片素材仅供程序调试使用，不用于任何盈利用途)</p>
+<h1 id="三种版本">三种版本</h1>
+<h2 id="版本一基于pyqt5和pygame的版本">版本一：基于PyQt5和PyGame的版本</h2>
+<p>（提供msi安装包，无内存溢出的风险）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/yuanshen-desktoppet" target="_blank" rel="noopener">https://gitee.com/yupengfei1074064684/yuanshen-desktoppet</a></p>
+<p><a href="https://github.com/MrYuPengfei/yuanshen-desktoppet" target="_blank" rel="noopener">https://github.com/MrYuPengfei/yuanshen-desktoppet</a></p>
+<p>WindowsNT原神桌面宠物安装向导。附上百度网链接：</p>
+<p>通过百度网盘分享的文件：原神桌面宠物V1.7安装向导.exe 链接：https://pan.baidu.com/s/1ZLYbpay6syzQD8Mn4rHM9A?pwd=dey6</p>
+<h2 id="版本二基于版本一和ollama人工智能模型的版本由于ai服务器到期目前暂停ai服务">版本二：基于版本一和Ollama人工智能模型的版本（由于AI服务器到期，目前暂停AI服务）</h2>
+<p>（建议在Windows11，内存在16GB以上，的电脑上使用，无安装包）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/LlamaVirtualPartners" target="_blank" rel="noopener">https://gitee.com/yupengfei1074064684/LlamaVirtualPartners</a></p>
+<img src="../../../zh/page/virtual-partners/ai-pet.jpg" alt="ai-pet" class="img-fluid mb-5"><h2 id="版本三推荐基于qt6的跨平台版本">版本三（推荐)：基于Qt6的跨平台版本：</h2>
+<p>（支持百度千帆大模型，可以在Windows11和Linux Mint Cinnamon Edition 上使用）：</p>
+<p><a href="https://gitee.com/yupengfei1074064684/virtual-partners4-pc" target="_blank" rel="noopener">https://gitee.com/yupengfei1074064684/virtual-partners4-pc</a></p>
+<p><a href="https://github.com/MrYuPengfei/VirtualPartners" target="_blank" rel="noopener">https://github.com/MrYuPengfei/VirtualPartners</a></p>
+<h2 id="windows11">Windows11</h2>
+<p>提供支持windows11的安装向导：</p>
+<p>通过网盘分享的文件：原神主题桌面伙伴V2.0.1安装向导.exe 链接: <a href="https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3" target="_blank" rel="noopener">https://pan.baidu.com/s/18anvnHh71icC85X15fQQDQ?pwd=vmu3</a> 提取码: vmu3 &ndash;来自百度网盘超级会员v7的分享</p>
+<img src="../../../zh/page/virtual-partners/virtual-partners.jpg" alt="virtual-partners.jpg" class="img-fluid mb-5"><h2 id="linux-mint-cinnamon-edition">Linux Mint Cinnamon Edition</h2>
+<p>尚在更新中，暂不提供deb包，目前可现在QtCreater中调试。</p>
+<img src="../../../zh/page/virtual-partners/mint-qt.jpg" alt="mint-qt" class="img-fluid mb-5"><h1 id="自定义">自定义</h1>
+<p>可以手动添加你喜欢的动漫角色，将png图片和mp3资源导入安装目录即可。本项目默认提供原神主题，图片和音频来自互联网。</p>
+
+</div>
+
+
+    </div>
+    <footer class="py-3 mt-auto bg-light">
+  <div class="container py-1 my-1">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md mb-0 text-muted">Open-source <a class="text-muted text-decoration-none" href="https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE">MIT</a> Licensed.</p>
+      <ul class="nav col-md-auto justify-content-end">
+        <li class="nav-item"><a href="../../../zh/en/code-of-conduct/" class="nav-link px-2 text-muted" title='Code of Conduct' aria-label='Code of Conduct'>Code of Conduct</a></li>
+        <li class="nav-item"><a href="../../../zh/en/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        <li class="nav-item"><a href="../../../zh/privacy-policy/" class="nav-link px-2 text-muted" title='隐私政策' aria-label='隐私政策'>隐私政策</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+
+
+</footer>
+    
+
+
+
+
+<script src="../../../js/bootstrap/bootstrap.bundle.min.js" defer></script>
+  
+    <script src="../../../js/main.js" defer></script>
+  
+
+</body>
+</html>

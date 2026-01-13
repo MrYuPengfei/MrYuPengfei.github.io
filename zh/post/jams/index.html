@@ -1,32 +1,33 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
     
 
-
+ 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 <meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
     
 
-<link rel="stylesheet" href="/yupengfei.site/css/style.1dd20a34965d85426a5ead0ff02260179c15b175c5bd5df0ee9db67b5b53791a19e0c8d67d5a71b71e65a2f7a5186e493679949e42610f9baa1039c52a81ef93.css" media="screen" integrity="sha512-HdIKNJZdhUJqXq0P8CJgF5wVsXXFvV3w7p22e1tTeRoZ4MjWfVpxtx5lovelGG5JNnmUnkJhD5uqEDnFKoHvkw==" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../css/style.css" media="screen">
 
     <title>Jams</title>
 
-<meta name="description" content="Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库 git clone https://git.jami.net/savoirfairelinux/jami-jams.git cd jami-jams 参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记 docker build -t jams:v3.8 . 参考资料: JAMS Documentation - Building from source2. Docker Compose 本地验证方案适用于开发阶段的快速联调，验证 JAMS 启动参数及 LDAP 连通性。2.1 准备自签名证书JAMS 强制要求 SSL 证书才能启动 Web 管理界面。mkdir certs openssl req -x509 -newkey rsa:4096 -keyout certs/key.pem -out certs/cert.pem -sha256 -days 365 -nodes -subj &ldquo;/CN=localhost&rdquo; 2.2 编写 docker-compose.ymlservices: openldap: image: osixia/openldap:1.4.0-amd64 container_name: openldap environment:
+<meta name="description" content="官方 Git 仓库、https://git.jami.net/savoirfairelinux/jami-jams.git
 ">
   
 
 
-<link rel="canonical" href="https:/yupengfei.site/zh/post/jams/">
+<link rel="canonical" href="http://localhost:1313/zh/post/jams/">
 
 
-<link rel="alternate" hreflang="zh-CN" href="https:/yupengfei.site/zh/post/jams/">
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh/post/jams/">
 
 
 
-<link rel="alternate" hreflang="x-default" href="https:/yupengfei.site/zh/post/jams/">
+<link rel="alternate" hreflang="x-default" href="http://localhost:1313/zh/post/jams/">
 
 
 
@@ -40,36 +41,25 @@
 
 
 <meta property="og:title" content="Jams">
-<meta property="og:description" content="Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库
-git clone https://git.jami.net/savoirfairelinux/jami-jams.git
-cd jami-jams
-参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记
-docker build -t jams:v3.8 .
-参考资料: JAMS Documentation - Building from source2. Docker Compose 本地验证方案适用于开发阶段的快速联调，验证 JAMS 启动参数及 LDAP 连通性。2.1 准备自签名证书JAMS 强制要求 SSL 证书才能启动 Web 管理界面。mkdir certs
-openssl req -x509 -newkey rsa:4096 -keyout certs/key.pem -out certs/cert.pem -sha256 -days 365 -nodes -subj &ldquo;/CN=localhost&rdquo;
-2.2 编写 docker-compose.ymlservices:
-openldap:
-image: osixia/openldap:1.4.0-amd64
-container_name: openldap
-environment:">
+<meta property="og:description" content="官方 Git 仓库、https://git.jami.net/savoirfairelinux/jami-jams.git">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https:/yupengfei.site/zh/post/jams/">
+<meta property="og:url" content="http://localhost:1313/zh/post/jams/">
     
       
-        <meta property="og:image" content="https:/yupengfei.site/images/logo.svg">
+        <meta property="og:image" content="http://localhost:1313/images/logo.svg">
     
     
       
         
       
-        <meta property="og:image" content="https:/yupengfei.site/images/site-feature-image_hu_4da550a2335ee8d8.png">
+        <meta property="og:image" content="http://localhost:1313/images/site-feature-image_hu_4da550a2335ee8d8.png">
     
   <meta property="article:section" content="post">
   
     <meta property="article:published_time" content="2026-01-11T20:07:28+08:00">
   
   
-    <meta property="article:modified_time" content="2026-01-12T09:27:56+08:00">
+    <meta property="article:modified_time" content="2026-01-13T17:03:22+08:00">
   
   <meta property="og:site_name" content="技术分享 Public Site">
 
@@ -86,20 +76,9 @@ environment:">
     
       
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content="https:/yupengfei.site/images/logo.svg">
+      <meta name="twitter:image" content="http://localhost:1313/images/logo.svg">
     <meta name="twitter:title" content="Jams">
-<meta name="twitter:description" content="Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库
-git clone https://git.jami.net/savoirfairelinux/jami-jams.git
-cd jami-jams
-参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记
-docker build -t jams:v3.8 .
-参考资料: JAMS Documentation - Building from source2. Docker Compose 本地验证方案适用于开发阶段的快速联调，验证 JAMS 启动参数及 LDAP 连通性。2.1 准备自签名证书JAMS 强制要求 SSL 证书才能启动 Web 管理界面。mkdir certs
-openssl req -x509 -newkey rsa:4096 -keyout certs/key.pem -out certs/cert.pem -sha256 -days 365 -nodes -subj &ldquo;/CN=localhost&rdquo;
-2.2 编写 docker-compose.ymlservices:
-openldap:
-image: osixia/openldap:1.4.0-amd64
-container_name: openldap
-environment:">
+<meta name="twitter:description" content="官方 Git 仓库、https://git.jami.net/savoirfairelinux/jami-jams.git">
 
 
 
@@ -118,19 +97,19 @@ environment:">
   "@type": "Article",
   "headline": "Jams",
   "datePublished": "2026-01-11T20:07:28+08:00",
-  "dateModified": "2026-01-12T09:27:56+08:00",
-  "mainEntityOfPage": "https:/yupengfei.site/",
+  "dateModified": "2026-01-13T17:03:22+08:00",
+  "mainEntityOfPage": "http://localhost:1313/",
   "publisher": {
     "@type": "Organization",
     
     "logo": {
       "@type": "ImageObject",
-      "url": "https:/yupengfei.site/images/logo.svg"
+      "url": "http://localhost:1313/images/logo.svg"
     },
     "name": "技术分享 Public Site"
   },
-  "wordcount" :  822 ,
-  "description": "Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库 git clone https://git.jami.net/savoirfairelinux/jami-jams.git cd jami-jams 参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记 docker build -t jams:v3.8 . 参考资料: JAMS Documentation - Building from source2. Docker Compose 本地验证方案适用于开发阶段的快速联调，验证 JAMS 启动参数及 LDAP 连通性。2.1 准备自签名证书JAMS 强制要求 SSL 证书才能启动 Web 管理界面。mkdir certs openssl req -x509 -newkey rsa:4096 -keyout certs/key.pem -out certs/cert.pem -sha256 -days 365 -nodes -subj \u0026ldquo;/CN=localhost\u0026rdquo; 2.2 编写 docker-compose.ymlservices: openldap: image: osixia/openldap:1.4.0-amd64 container_name: openldap environment:\n",
+  "wordcount" :  57 ,
+  "description": "官方 Git 仓库、https://git.jami.net/savoirfairelinux/jami-jams.git\n",
   "keywords":  null 
 }
 </script>
@@ -147,8 +126,8 @@ environment:">
 
 
     
-<link rel="icon" type="image/svg+xml" href="https:/yupengfei.site/favicon.svg">
-<link rel="icon" type="image/png" href="https:/yupengfei.site/favicon.png">
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:1313/favicon.png">
 
 </head>
 
@@ -157,9 +136,9 @@ environment:">
     <div class="container">
 
       
-      <a class="navbar-brand" href="/yupengfei.site/zh/">
+      <a class="navbar-brand" href="../../../zh/">
         
-        <img src="/yupengfei.site/images/logo.svg" alt="logo" width="30" height="24"
+        <img src="../../../images/logo.svg" alt="logo" width="30" height="24"
           class="d-inline-block align-text-top">
         
         技术分享 Public Site
@@ -174,22 +153,51 @@ environment:">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/yupengfei.site/zh/">主页</a>
+            <a class="nav-link" aria-current="page" href="../../../zh/">主页</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              博客
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../../../zh/tags/hugo" >
+                  Hugo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../zh/tags/bootstrap" >
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://blog.yupengfei.xyz" >
+                  Blog
+                </a>
+              </li>
+              </ul>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/yupengfei.site/zh/page">特色页面</a>
+            <a class="nav-link" aria-current="page" href="../../../zh/page">特色页面</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/yupengfei.site/zh/post">最新帖子</a>
+            <a class="nav-link" aria-current="page" href="../../../zh/post">最新帖子</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/zh/yupengfei.site/zh/contact/" title='Contact' aria-label='Contact'>Contact</a>
+            <a class="nav-link" aria-current="page" href="../../../zh/contact">联系站长</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../../zh/en/contact/" title='Contact' aria-label='Contact'>Contact</a>
           </li>
           
           </ul>
@@ -203,7 +211,7 @@ environment:">
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
                 <li>
-                  <a class="dropdown-item active" aria-current="true" href="/yupengfei.site/zh/post/jams/" title='Jams' aria-label='Jams'>
+                  <a class="dropdown-item active" aria-current="true" href="../../../zh/post/jams/" title='Jams' aria-label='Jams'>
                     中文
                   </a>
                 </li>
@@ -212,7 +220,7 @@ environment:">
                 </li>
                 
                 <li>
-                  <a class="dropdown-item" rel="alternate" href="/yupengfei.site/" hreflang="en" lang="en" title='技术分享 Public Site' aria-label='技术分享 Public Site'>
+                  <a class="dropdown-item" rel="alternate" href="../../../en/" hreflang="en" lang="en" title='技术分享 Public Site' aria-label='技术分享 Public Site'>
                     English
                   </a>
                 </li>
@@ -239,10 +247,10 @@ environment:">
                     
                 
             
-                    <li class="breadcrumb-item"> <a href="/yupengfei.site/zh/">Home</a> </li>
+                    <li class="breadcrumb-item"> <a href="../../../zh/">Home</a> </li>
                 
             
-                    <li class="breadcrumb-item"> <a href="/yupengfei.site/zh/post/">Posts</a> </li>
+                    <li class="breadcrumb-item"> <a href="../../../zh/post/">Posts</a> </li>
                 
             
                 <li class="breadcrumb-item active" aria-current="page">  Jams</li>
@@ -253,132 +261,7 @@ environment:">
 
 
 <div class="container py-3">
-  <p>Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库
-git clone <a href="https://git.jami.net/savoirfairelinux/jami-jams.git" target="_blank" rel="noopener">https://git.jami.net/savoirfairelinux/jami-jams.git</a>
-cd jami-jams
-参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记
-docker build -t jams:v3.8 .
-参考资料: JAMS Documentation - Building from source2. Docker Compose 本地验证方案适用于开发阶段的快速联调，验证 JAMS 启动参数及 LDAP 连通性。2.1 准备自签名证书JAMS 强制要求 SSL 证书才能启动 Web 管理界面。mkdir certs
-openssl req -x509 -newkey rsa:4096 -keyout certs/key.pem -out certs/cert.pem -sha256 -days 365 -nodes -subj &ldquo;/CN=localhost&rdquo;
-2.2 编写 docker-compose.ymlservices:
-openldap:
-image: osixia/openldap:1.4.0-amd64
-container_name: openldap
-environment:</p>
-<ul>
-<li>LDAP_ORGANISATION=Jami</li>
-<li>LDAP_DOMAIN=jami.net</li>
-<li>LDAP_ADMIN_PASSWORD=admin123
-ports:</li>
-<li>&ldquo;389:389&rdquo;</li>
-</ul>
-<p>jams:
-image: jams:v3.8
-container_name: jams
-ports:</p>
-<ul>
-<li>&ldquo;8443:8443&rdquo;
-environment:</li>
-<li>JAMS_PORT=8443</li>
-<li>SSL_CERT=/opt/jams/certs/cert.pem</li>
-<li>SSL_KEY=/opt/jams/certs/key.pem
-volumes:</li>
-<li>./certs:/opt/jams/certs:ro # 挂载本地证书目录到容器
-depends_on:</li>
-<li>openldap
-参考资料: Docker Compose File Reference &amp; Osixia OpenLDAP README3. Kubernetes 详细部署方案适用于生产环境或需要容器编排能力的场景。3.1 创建 Kubernetes Secretkubectl create secret generic jams-certs <br>
-&ndash;from-file=cert.pem=certs/cert.pem <br>
-&ndash;from-file=key.pem=certs/key.pem
-3.2 编写资源清单 jams-k8s.yaml# 1. OpenLDAP 部署
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-name: openldap
-spec:
-selector:
-matchLabels:
-app: openldap
-template:
-metadata:
-labels:
-app: openldap
-spec:
-containers:</li>
-<li>name: openldap
-image: osixia/openldap:1.4.0-amd64
-env:</li>
-<li>name: LDAP_ORGANISATION
-value: &ldquo;Jami&rdquo;</li>
-<li>name: LDAP_DOMAIN
-value: &ldquo;jami.net&rdquo;</li>
-<li>name: LDAP_ADMIN_PASSWORD
-value: &ldquo;admin123&rdquo;</li>
-</ul>
-<hr>
-<p>apiVersion: v1
-kind: Service
-metadata:
-name: openldap
-spec:
-ports:</p>
-<ul>
-<li>port: 389
-selector:
-app: openldap</li>
-</ul>
-<hr>
-<h1 id="2-jams-部署">2. JAMS 部署</h1>
-<p>apiVersion: apps/v1
-kind: Deployment
-metadata:
-name: jams
-spec:
-selector:
-matchLabels:
-app: jams
-template:
-metadata:
-labels:
-app: jams
-spec:
-containers:</p>
-<ul>
-<li>name: jams
-image: jams:v3.8
-imagePullPolicy: Never # 强制使用本地构建的镜像
-env:</li>
-<li>name: JAMS_PORT
-value: &ldquo;8443&rdquo;</li>
-<li>name: SSL_CERT
-value: &ldquo;/opt/jams/certs/cert.pem&rdquo;</li>
-<li>name: SSL_KEY
-value: &ldquo;/opt/jams/certs/key.pem&rdquo;
-ports:</li>
-<li>containerPort: 8443
-volumeMounts:</li>
-<li>name: cert-vol
-mountPath: /opt/jams/certs
-readOnly: true
-volumes:</li>
-<li>name: cert-vol
-secret:
-secretName: jams-certs</li>
-</ul>
-<hr>
-<p>apiVersion: v1
-kind: Service
-metadata:
-name: jams-service
-spec:
-type: LoadBalancer
-ports:</p>
-<ul>
-<li>port: 8443
-targetPort: 8443
-selector:
-app: jams
-参考资料: Kubernetes Secrets Documentation4. 方案优劣对比分析特性Docker ComposeKubernetes (K8s)优势配置极简，适合本地单机测试，资源开销小。高可用自愈，支持滚动更新，适合多节点集群。劣势缺乏自动扩缩容与健康检查重启机制。学习成本高，网络与存储配置相对复杂。参考来源Docker Compose vs K8s5. 核心注意事项 (深度检查清单)5.1 端口映射检查容器内端口: JAMS 内部通过环境变量 JAMS_PORT 监听。必须确保 targetPort 也是 8443。参考资料: JAMS Launcher Parameters5.2 卷挂载路径一致性核对: SSL_CERT 环境变量指向的值必须等于 mountPath + Secret 文件名。示例: /opt/jams/certs (mountPath) + cert.pem (Secret Key) = /opt/jams/certs/cert.pem。5.3 镜像拉取策略注意: 在 Windows Docker Desktop 上部署本地构建镜像，务必将 imagePullPolicy 设为 Never。参考资料: K8s Image Pull Policies5.4 LDAP 连通性地址: 在 JAMS Web 引导界面中，LDAP Server 应填入 ldap://openldap:389。</li>
-</ul>
+  <p>官方 Git 仓库、https://git.jami.net/savoirfairelinux/jami-jams.git</p>
 
 </div>
 
@@ -389,23 +272,26 @@ app: jams
     <div class="d-flex flex-wrap justify-content-between align-items-center">
       <p class="col-md mb-0 text-muted">Open-source <a class="text-muted text-decoration-none" href="https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE">MIT</a> Licensed.</p>
       <ul class="nav col-md-auto justify-content-end">
-        <li class="nav-item"><a href="/yupengfei.site/zh/privacy-policy/" class="nav-link px-2 text-muted" title='隐私政策' aria-label='隐私政策'>隐私政策</a></li>
+        <li class="nav-item"><a href="../../../zh/en/code-of-conduct/" class="nav-link px-2 text-muted" title='Code of Conduct' aria-label='Code of Conduct'>Code of Conduct</a></li>
+        <li class="nav-item"><a href="../../../zh/en/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        <li class="nav-item"><a href="../../../zh/privacy-policy/" class="nav-link px-2 text-muted" title='隐私政策' aria-label='隐私政策'>隐私政策</a></li>
         </ul>
     </div>
   </div>
+
+
+
+
 </footer>
     
 
 
 
 
-<script src="/yupengfei.site/js/bootstrap/bootstrap.bundle.min.min.7620f70f6a288d4f1a662439d8772846a2d2084a9466d8d25b3b246d986b3c96e31aae489aaa01a1961bd6f4ad9842e677b02848d0aae0a3fb74b76a522f9e80.js" integrity="sha512-diD3D2oojU8aZiQ52HcoRqLSCEqUZtjSWzskbZhrPJbjGq5ImqoBoZYb1vStmELmd7AoSNCq4KP7dLdqUi&#43;egA==" crossorigin="anonymous" defer></script>
+<script src="../../../js/bootstrap/bootstrap.bundle.min.js" defer></script>
   
-    <script src="/yupengfei.site/js/main.min.e8d88c82c0438b527f1aca4115652ba1e2877bf805b75593b23ac0e3fe2b3fe95a467d1feef275355132ba061da6404b0d24d55afabc209b294b1db043be014d.js" integrity="sha512-6NiMgsBDi1J/GspBFWUroeKHe/gFt1WTsjrA4/4rP&#43;laRn0f7vJ1NVEyugYdpkBLDSTVWvq8IJspSx2wQ74BTQ==" crossorigin="anonymous" defer></script>
+    <script src="../../../js/main.js" defer></script>
   
-  
-
-
 
 </body>
 </html>

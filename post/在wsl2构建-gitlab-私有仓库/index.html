@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    
+    
+
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+    
+
+<link rel="stylesheet" href="../../css/style.1dd20a34965d85426a5ead0ff02260179c15b175c5bd5df0ee9db67b5b53791a19e0c8d67d5a71b71e65a2f7a5186e493679949e42610f9baa1039c52a81ef93.css" media="screen" integrity="sha512-HdIKNJZdhUJqXq0P8CJgF5wVsXXFvV3w7p22e1tTeRoZ4MjWfVpxtx5lovelGG5JNnmUnkJhD5uqEDnFKoHvkw==" crossorigin="anonymous">
+
+    <title>在WSL2构建 GitLab 私有仓库</title>
+
+<meta name="description" content=" 如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。 尽量使用官方教程使用apt包管理工具进行安装。 使用docker部署在WSL2上很麻烦。 部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务 关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。 ">
+  
+
+
+<link rel="canonical" href="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/">
+
+
+<link rel="alternate" hreflang="zh-CN" href="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/">
+
+
+
+<link rel="alternate" hreflang="x-default" href="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:title" content="在WSL2构建 GitLab 私有仓库">
+<meta property="og:description" content="
+如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。
+尽量使用官方教程使用apt包管理工具进行安装。
+使用docker部署在WSL2上很麻烦。
+部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务
+关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。
+">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/">
+    
+      
+        
+      
+      <meta property="og:image" content="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/cat3_hu_5a9eeeac76d5292c.jpg">
+    
+    
+      
+        <meta property="og:image" content="https://yupengfei.site/images/logo.svg">
+    
+    
+      
+        
+      
+        <meta property="og:image" content="https://yupengfei.site/images/site-feature-image_hu_4da550a2335ee8d8.png">
+    
+  <meta property="article:section" content="post">
+  
+    <meta property="article:published_time" content="2025-03-01T20:49:37+08:00">
+  
+  
+    <meta property="article:modified_time" content="2026-01-13T18:41:17+08:00">
+  
+  <meta property="og:site_name" content="技术分享 Public Site">
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/cat3_hu_5a9eeeac76d5292c.jpg">
+  <meta name="twitter:title" content="在WSL2构建 GitLab 私有仓库">
+<meta name="twitter:description" content="
+如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。
+尽量使用官方教程使用apt包管理工具进行安装。
+使用docker部署在WSL2上很麻烦。
+部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务
+关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。
+">
+
+
+
+
+
+
+  
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "在WSL2构建 GitLab 私有仓库",
+  "image": "https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/cat3.jpg",
+  "datePublished": "2025-03-01T20:49:37+08:00",
+  "dateModified": "2026-01-13T18:41:17+08:00",
+  "mainEntityOfPage": "https://yupengfei.site/",
+  "publisher": {
+    "@type": "Organization",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yupengfei.site/images/logo.svg"
+    },
+    "name": "技术分享 Public Site"
+  },
+  "wordcount" :  284 ,
+  "description": " 如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。 尽量使用官方教程使用apt包管理工具进行安装。 使用docker部署在WSL2上很麻烦。 部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务 关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。 ",
+  "keywords":  null 
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<link rel="icon" type="image/svg+xml" href="https://yupengfei.site/favicon.svg">
+<link rel="icon" type="image/png" href="https://yupengfei.site/favicon.png">
+
+</head>
+
+<body class="post single d-flex flex-column min-vh-100"><header class="main-header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="../../">
+        
+        <img src="../../images/logo.svg" alt="logo" width="30" height="24"
+          class="d-inline-block align-text-top">
+        
+        技术分享 Public Site
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../">主页</a>
+          </li>
+          
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              博客
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="../../tags/hugo" >
+                  Hugo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../tags/bootstrap" >
+                  Bootstrap
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="https://blog.yupengfei.xyz" >
+                  Blog
+                </a>
+              </li>
+              </ul>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../page">特色页面</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../post">最新帖子</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../contact">联系站长</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../en/contact/" title='Contact' aria-label='Contact'>Contact</a>
+          </li>
+          
+          </ul>
+
+        
+        <div class="menu-language order-md-2">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ZH
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
+                <li>
+                  <a class="dropdown-item active" aria-current="true" href="../../post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/" title='在WSL2构建 GitLab 私有仓库' aria-label='在WSL2构建 GitLab 私有仓库'>
+                    中文
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                
+                <li>
+                  <a class="dropdown-item" rel="alternate" href="../../en/" hreflang="en" lang="en" title='技术分享 Public Site' aria-label='技术分享 Public Site'>
+                    
+                  </a>
+                </li>
+                </ul>
+            </li>
+          </ul>
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </nav>
+</header><div id="content">
+        <nav class="header-breadcrumb my-2" aria-label="breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb my-0">
+            
+            
+                
+                
+                    
+                
+                    
+                
+            
+                    <li class="breadcrumb-item"> <a href="../../">Home</a> </li>
+                
+            
+                    <li class="breadcrumb-item"> <a href="../../post/">Posts</a> </li>
+                
+            
+                <li class="breadcrumb-item active" aria-current="page">  在WSL2构建 GitLab 私有仓库</li>
+            
+        </ol>
+    </div>
+</nav>
+
+
+<div class="container py-3">
+  <ol>
+<li>如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。</li>
+<li>尽量使用官方教程使用apt包管理工具进行安装。</li>
+<li>使用docker部署在WSL2上很麻烦。</li>
+<li>部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务</li>
+<li>关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。</li>
+</ol>
+
+</div>
+
+
+    </div>
+    <footer class="py-3 mt-auto bg-light">
+  <div class="container py-1 my-1">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <p class="col-md mb-0 text-muted">Open-source <a class="text-muted text-decoration-none" href="https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE">MIT</a> Licensed.</p>
+      <ul class="nav col-md-auto justify-content-end">
+        <li class="nav-item"><a href="../../en/code-of-conduct/" class="nav-link px-2 text-muted" title='Code of Conduct' aria-label='Code of Conduct'>Code of Conduct</a></li>
+        <li class="nav-item"><a href="../../en/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        <li class="nav-item"><a href="../../privacy-policy/" class="nav-link px-2 text-muted" title='隐私政策' aria-label='隐私政策'>隐私政策</a></li>
+        </ul>
+    </div>
+  </div>
+
+
+
+  <div style="background-color: #005ea6 !important;" class="py-1 my-1">
+    <div class="container py-3 text-white">
+      
+      <div class="row align-items-center mb-2">
+        <div class="col-md-4 col-12 text-md-start text-center mb-2 mb-md-0">
+          <span class="fs-7"> 健康绿色上网，共建和谐空间</span>
+        </div>
+        <div class="col-md-4 col-12 text-center mb-2 mb-md-0">
+          <span class="fs-7"> </span>
+        </div>
+        <div class="col-md-4 col-12 text-md-end text-center">
+          <span class="fs-7"> </span> 
+        </div>
+      </div>
+
+      
+      <div class="row align-items-center mb-2">
+        
+        <div class="col-lg-8 col-md-7 col-12 mb-3 mb-md-0">
+          <div class="fs-7 mb-1">版权所有：于鹏飞</div>
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 fs-7">
+            <img src="../../beian-icon.png" alt="备案图标" class="img-fluid" style="width: 16px; height: 16px;">
+            
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=14118202000051"
+               rel="noreferrer"
+               target="_blank"
+               class="text-white text-decoration-none">
+              晋公网安备14118202000051号
+            </a>
+            <span>&nbsp;</span>
+            
+            <a href="https://beian.miit.gov.cn/#/Integrated/index"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="text-white text-decoration-none">
+              晋ICP备2026000124号
+            </a>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4 col-md-5 col-12 d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+          <a href="https://yupengfei.site/qrcode.jpg" target="_blank">
+            <img src="../../qrcode.jpg" alt="二维码" class="img-fluid" style="width: 60px; height: auto;">
+          </a>
+        </div>
+      </div>
+
+  </div>
+  
+
+</footer>
+    
+
+
+
+
+<script src="../../js/bootstrap/bootstrap.bundle.min.min.7620f70f6a288d4f1a662439d8772846a2d2084a9466d8d25b3b246d986b3c96e31aae489aaa01a1961bd6f4ad9842e677b02848d0aae0a3fb74b76a522f9e80.js" integrity="sha512-diD3D2oojU8aZiQ52HcoRqLSCEqUZtjSWzskbZhrPJbjGq5ImqoBoZYb1vStmELmd7AoSNCq4KP7dLdqUi&#43;egA==" crossorigin="anonymous" defer></script>
+  
+    <script src="../../js/main.min.e8d88c82c0438b527f1aca4115652ba1e2877bf805b75593b23ac0e3fe2b3fe95a467d1feef275355132ba061da6404b0d24d55afabc209b294b1db043be014d.js" integrity="sha512-6NiMgsBDi1J/GspBFWUroeKHe/gFt1WTsjrA4/4rP&#43;laRn0f7vJ1NVEyugYdpkBLDSTVWvq8IJspSx2wQ74BTQ==" crossorigin="anonymous" defer></script>
+  
+  
+
+
+
+</body>
+</html>

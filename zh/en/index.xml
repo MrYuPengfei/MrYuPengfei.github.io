@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ens on 技术分享 Public Site</title>
+    <link>http://localhost:1313/zh/en/</link>
+    <description>Recent content in Ens on 技术分享 Public Site</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <managingEditor>mr_yupengfei@foxmail.com (MrYuPengfei)</managingEditor>
+    <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
+    <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
+    <lastBuildDate>Tue, 13 Jan 2026 19:56:45 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/zh/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code of Conduct</title>
+      <link>http://localhost:1313/zh/en/code-of-conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>http://localhost:1313/zh/en/code-of-conduct/</guid>
+      <description>&lt;h1 id=&#34;contributor-covenant-code-of-conduct&#34;&gt;Contributor Covenant Code of Conduct&lt;/h1&gt;&#xA;&lt;h2 id=&#34;our-pledge&#34;&gt;Our Pledge&lt;/h2&gt;&#xA;&lt;p&gt;We as members, contributors, and leaders pledge to make participation in our&#xA;community a harassment-free experience for everyone, regardless of age, body&#xA;size, visible or invisible disability, ethnicity, sex characteristics, gender&#xA;identity and expression, level of experience, education, socio-economic status,&#xA;nationality, personal appearance, race, caste, color, religion, or sexual&#xA;identity and orientation.&lt;/p&gt;&#xA;&lt;p&gt;We pledge to act and interact in ways that contribute to an open, welcoming,&#xA;diverse, inclusive, and healthy community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/zh/en/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>http://localhost:1313/zh/en/contact/</guid>
+      <description>&lt;h2 id=&#34;wechat&#34;&gt;WeChat&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;mr_yupengfei&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tencent-qq&#34;&gt;Tencent QQ&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1074064684&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:mr_yupengfei@foxmail.com&#34;&gt;mr_yupengfei@foxmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;mailto:yupengfei.edu@gmail.com&#34;&gt;yupengfei.edu@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;orcid&#34;&gt;ORCID&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://orcid.org/0009-0009-1668-4543&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://orcid.org/0009-0009-1668-4543&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;simple-page&#34;&gt;Simple Page&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://mryupengfei.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mryupengfei.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei.xyz&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yupengfei.xyz&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://yupengfei.site&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://yupengfei.site&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;github&#34;&gt;Github&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/mryupengfei&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/mryupengfei&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;gitee&#34;&gt;Gitee&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gitee.com/yupengfei1074064684&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gitee.com/yupengfei1074064684&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Privacy Policy</title>
+      <link>http://localhost:1313/zh/en/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
+      <guid>http://localhost:1313/zh/en/privacy-policy/</guid>
+      <description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: We do not use cookies and we do not collect any personal data.&lt;/p&gt;&#xA;&lt;h2 id=&#34;website-visitors&#34;&gt;Website visitors&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;No personal information is collected.&lt;/li&gt;&#xA;&lt;li&gt;No information is stored in the browser.&lt;/li&gt;&#xA;&lt;li&gt;No information is shared with, sent to or sold to third-parties.&lt;/li&gt;&#xA;&lt;li&gt;No information is shared with advertising companies.&lt;/li&gt;&#xA;&lt;li&gt;No information is mined and harvested for personal and behavioral trends.&lt;/li&gt;&#xA;&lt;li&gt;No information is monetized.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;information-we-collect-and-what-we-use-it-for&#34;&gt;Information we collect and what we use it for&lt;/h2&gt;&#xA;&lt;p&gt;The server hosting this site can collect the following information:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
