@@ -1,0 +1,17 @@
+# 所有文件默认使用 LF 换行符，禁止自动转换
+* text=auto eol=lf
+
+# 二进制文件（图片、字体、二进制包）不做换行符处理
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.zip binary
+*.tar.gz binary
+*.exe binary
