@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 技术分享 Public Site</title>
-    <link>//localhost:1313/categories/</link>
+    <link>https:/yupengfei.site/categories/</link>
     <description>Recent content in Categories on 技术分享 Public Site</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -10,19 +10,19 @@
     <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
     <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
     <lastBuildDate>Mon, 12 Jan 2026 21:39:11 +0800</lastBuildDate>
-    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https:/yupengfei.site/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One</title>
-      <link>//localhost:1313/categories/one/</link>
+      <link>https:/yupengfei.site/categories/one/</link>
       <pubDate>Mon, 05 Jan 2026 08:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>//localhost:1313/categories/one/</guid>
+      <guid>https:/yupengfei.site/categories/one/</guid>
       <description></description>
     </item>
     <item>
       <title>Two</title>
-      <link>//localhost:1313/categories/two/</link>
+      <link>https:/yupengfei.site/categories/two/</link>
       <pubDate>Mon, 05 Jan 2026 08:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>//localhost:1313/categories/two/</guid>
+      <guid>https:/yupengfei.site/categories/two/</guid>
       <description></description>
     </item>
   </channel>
