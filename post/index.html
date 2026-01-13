@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="zh-CN">
 <head>
     
 
@@ -21,10 +21,9 @@
 <link rel="canonical" href="https:/yupengfei.site/post/">
 
 
-<link rel="alternate" hreflang="en-US" href="https:/yupengfei.site/post/">
+<link rel="alternate" hreflang="zh-CN" href="https:/yupengfei.site/post/">
 
 
-<link rel="alternate" hreflang="zh-CN" href="https:/yupengfei.site/zh/post/">
 
 <link rel="alternate" hreflang="x-default" href="https:/yupengfei.site/post/">
 
@@ -118,41 +117,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="menu-main navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/yupengfei.site/">Home</a>
-          </li>
-          
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Blog
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li>
-                <a class="dropdown-item" href="/yupengfei.site/tags/hugo" >
-                  Hugo
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="/yupengfei.site/tags/bootstrap" >
-                  Bootstrap
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="https://blog.yupengfei.xyz" >
-                  Blog
-                </a>
-              </li>
-              </ul>
+            <a class="nav-link" aria-current="page" href="/yupengfei.site/">主页</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/yupengfei.site/page">Pages</a>
+            <a class="nav-link" aria-current="page" href="/yupengfei.site/page">特色页面</a>
           </li>
           
           
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/yupengfei.site/post">Posts</a>
+            <a class="nav-link" aria-current="page" href="/yupengfei.site/post">最新帖子</a>
           </li>
           
           
@@ -167,12 +142,12 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarLanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                EN
+                ZH
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarLanguageDropdown">
                 <li>
                   <a class="dropdown-item active" aria-current="true" href="/yupengfei.site/post/" title='Posts' aria-label='Posts'>
-                    English
+                    中文
                   </a>
                 </li>
                 <li>
@@ -180,8 +155,8 @@
                 </li>
                 
                 <li>
-                  <a class="dropdown-item" rel="alternate" href="/yupengfei.site/zh/post/" hreflang="zh" lang="zh" title='Posts' aria-label='Posts'>
-                    中文
+                  <a class="dropdown-item" rel="alternate" href="/yupengfei.site/en/" hreflang="en" lang="en" title='技术分享 Public Site' aria-label='技术分享 Public Site'>
+                    English
                   </a>
                 </li>
                 </ul>
@@ -249,7 +224,7 @@
                     
                         <a class="badge text-bg-light nav-link" href="/yupengfei.site/tags/index/">Index</a>&nbsp;
                     
-                        <a class="badge text-bg-light nav-link" href="/yupengfei.site/tags/privacy/">Privacy</a>&nbsp;
+                        <a class="badge text-bg-light nav-link" href="/yupengfei.site/tags/%E9%9A%90%E7%A7%81/">隐私</a>&nbsp;
                     
                 </div>
             
@@ -269,11 +244,139 @@
 
                 <div class="col-md-8">
                     <div class="card-body">
+                        <h2 class="card-title text-primary">Jams</h2>
+
+                        <div class="card-subtitle text-muted mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
+                            <time class="ms-2" datetime="2026-01-12T09:27:56&#43;0800">2026年1月12日</time>
+
+                            
+
+                            
+                        </div>
+
+                        <div class="card-text">
+                            
+                                <p>Jami JAMS (Java 版) 容器化部署指南本指南详细介绍了如何在 Windows 11 环境下，利用官方源码构建 jams:v3.8 镜像，并实现 Docker Compose 与 Kubernetes 的部署。1. 源码获取与镜像构建基于官方 Java 开发架构，利用项目自带的 Dockerfile 进行多阶段构建。1.1 获取源码# 克隆官方 Git 仓库
+git clone <a href="https://git.jami.net/savoirfairelinux/jami-jams.git" target="_blank" rel="noopener">https://git.jami.net/savoirfairelinux/jami-jams.git</a>
+cd jami-jams
+参考资料: Jami JAMS Git Repository1.2 构建镜像# 使用官方 Dockerfile 构建并标记
+docker build -t jams:v3.8 .
+参考资料: JAMS Documentation - Building from …</p>
+                            
+                        </div>
+                        
+                        <a class="stretched-link" href="/yupengfei.site/post/jams/"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="card border-light-subtle mb-3">
+            <div class="row g-0">
+
+                <div class="col-md-4 d-flex align-items-center">
+                    
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">使用自定义域名访问 GitLab 私有仓库</h2>
+
+                        <div class="card-subtitle text-muted mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
+                            <time class="ms-2" datetime="2026-01-12T21:32:40&#43;0800">2026年1月12日</time>
+
+                            
+
+                            
+                        </div>
+
+                        <div class="card-text">
+                            
+                                <h1 id="-关键">🎯 关键</h1>
+<p>一部分gitlab的配置可以通过在web端通过登录root用户进行admin修改。部分需要修改服务器下关于gitlab的配置文件。</p>
+<h1 id="gitlab主要配置文件">Gitlab主要配置文件</h1>
+<h3 id="一gitlab-最核心的配置文件99-的修改都在这">一、GitLab 最核心的配置文件（99% 的修改都在这）</h3>
+<h4 id="1-etcgitlabgitlabrb主配置文件必记">1. <code>/etc/gitlab/gitlab.rb</code>（主配置文件，必记！）</h4>
+<ul>
+<li><strong>作用</strong>：GitLab 所有全局配置的「入口文件」，包括外部访问 URL、端口、存储路径、邮件、SSL、LDAP、内置组件（Nginx/PostgreSQL/Redis）等，是你唯一需要手动修改的配置文件。</li>
+<li><strong>特点</strong>：默认全是注释（<code>#</code> 开头），只需要取消注释并修改对应参数，无需手写配置；修改后不会立即生效，需要执行命令生成实际配置。</li>
+<li><strong>新手常用配置示例</strong>：</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># 1. 设置GitLab外部访问地址（最基础配置）</span>
+</span></span><span style="display:flex;"><span>external_url …</span></span></span></span></code></pre></div>
+                            
+                        </div>
+                        
+                        <a class="stretched-link" href="/yupengfei.site/post/%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="card border-light-subtle mb-3">
+            <div class="row g-0">
+
+                <div class="col-md-4 d-flex align-items-center">
+                    
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">在WSL2上部署Gitlab</h2>
+
+                        <div class="card-subtitle text-muted mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
+                            <time class="ms-2" datetime="2026-01-12T21:37:13&#43;0800">2026年1月12日</time>
+
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
+                                
+                                    <a class="text-decoration-none text-muted ms-2" href="/categories/one/">one</a>
+                                
+                                    <a class="text-decoration-none text-muted ms-2" href="/categories/two/">two</a>
+                                
+                            
+
+                            
+                        </div>
+
+                        <div class="card-text">
+                            
+                                <ol>
+<li>如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。</li>
+<li>尽量使用官方教程使用apt包管理工具进行安装。</li>
+<li>使用docker部署在WSL2上很麻烦。</li>
+<li>部署后，如果需要让别人访问部署再WSL2中的Gitlab，最好再配置一个frp服务器和一个frp客户端，使得其他人可以通过frp服务，通过公网IP进行访问WSL2（个人笔记本或台式机）上的Gitlab服务</li>
+<li>关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。</li>
+</ol>
+                            
+                        </div>
+                        
+                        <a class="stretched-link" href="/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="card border-light-subtle mb-3">
+            <div class="row g-0">
+
+                <div class="col-md-4 d-flex align-items-center">
+                    
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
                         <h2 class="card-title text-primary">About This Site</h2>
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T09:27:56&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T09:27:56&#43;0800">2026年1月12日</time>
 
                             
 
@@ -312,7 +415,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T21:41:40&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T21:39:11&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -356,7 +459,7 @@
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0-119/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0.119.0/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
                         
                     
                 </div>
@@ -367,7 +470,7 @@
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -386,14 +489,14 @@
 
                         <div class="card-text">
                             
-                                <img src="/yupengfei.site/post/hugo-v0-119/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>This version is built with Go 1.21.1 which contains some relevant security fixes for the html/template package, see <a href="https://github.com/golang/go/issues/62196" target="_blank" rel="noopener">Issue 62196</a> and <a href="https://github.com/golang/go/issues/62197" target="_blank" rel="noopener">Issue 62197</a>. This is the main reason Hugo 0.119.0 is released sooner rather than later. But this release also comes with a dependency refresh and some useful image processing improvements:</p>
+                                <img src="/yupengfei.site/post/hugo-v0.119.0/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>This version is built with Go 1.21.1 which contains some relevant security fixes for the html/template package, see <a href="https://github.com/golang/go/issues/62196" target="_blank" rel="noopener">Issue 62196</a> and <a href="https://github.com/golang/go/issues/62197" target="_blank" rel="noopener">Issue 62197</a>. This is the main reason Hugo 0.119.0 is released sooner rather than later. But this release also comes with a dependency refresh and some useful image processing improvements:</p>
 <p>A new general-purpose <a href="https://gohugo.io/content-management/image-processing/#process" target="_blank" rel="noopener">Process</a> method and filter.
 A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel="noopener">Opacity</a> filter.</p>
 <p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Release …</a></p>
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0-119/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0.119.0/"></a>
                     </div>
                 </div>
 
@@ -407,7 +510,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/bootstrap-5-3-0/bootstrap-5-3_hu_c4336bf0e9777c17.webp" loading="lazy" width="600" height="300" alt="featured image bootstrap-5-3.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/bootstrap-5.3.0/bootstrap-5-3_hu_c4336bf0e9777c17.webp" loading="lazy" width="600" height="300" alt="featured image bootstrap-5-3.png">
                         
                     
                 </div>
@@ -418,7 +521,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -441,7 +544,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/bootstrap-5-3-0/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/bootstrap-5.3.0/"></a>
                     </div>
                 </div>
 
@@ -455,7 +558,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0-100/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0.100.2/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
                         
                     
                 </div>
@@ -466,7 +569,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -485,13 +588,13 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-text">
                             
-                                <img src="/yupengfei.site/post/hugo-v0-100/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>This release is mostly motivated by the fix for the panic experienced by people having blackfriday configured as defaultMarkdownHandler (<a href="https://github.com/gohugoio/hugo/issues/9968" target="_blank" rel="noopener">#9968</a>). The Blackfriday support was removed in Hugo v0.100.0 after being deprecated with a warning for a long time.</p>
+                                <img src="/yupengfei.site/post/hugo-v0.100.2/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>This release is mostly motivated by the fix for the panic experienced by people having blackfriday configured as defaultMarkdownHandler (<a href="https://github.com/gohugoio/hugo/issues/9968" target="_blank" rel="noopener">#9968</a>). The Blackfriday support was removed in Hugo v0.100.0 after being deprecated with a warning for a long time.</p>
 <p>v0.100.1 fix panic with markdownify/RenderString with shortcode on Page with no content file.</p>
 <p>$page.RenderString (see <a href="https://github.com/gohugoio/hugo/issues/6703" target="_blank" rel="noopener">#6703</a>) finally supports …</p>
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0-100/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0.100.2/"></a>
                     </div>
                 </div>
 
@@ -505,7 +608,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-bootstrap-theme/site-feature-image_hu_2d5117d7e546aa49.webp" loading="lazy" width="600" height="300" alt="featured image site-feature-image.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-bootstrap-theme-alpha/site-feature-image_hu_2d5117d7e546aa49.webp" loading="lazy" width="600" height="300" alt="featured image site-feature-image.png">
                         
                     
                 </div>
@@ -516,7 +619,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -543,7 +646,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/hugo-bootstrap-theme/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/hugo-bootstrap-theme-alpha/"></a>
                     </div>
                 </div>
 
@@ -557,7 +660,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0-99/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/hugo-v0.99.1/hugo-logo_hu_2c16a2cdea47f1f0.webp" loading="lazy" width="600" height="300" alt="featured image hugo-logo.png">
                         
                     
                 </div>
@@ -568,7 +671,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -587,12 +690,12 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-text">
                             
-                                <img src="/yupengfei.site/post/hugo-v0-99/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>Fix server regression for multihost sites (multiple languages with different baseURLs).</p>
+                                <img src="/yupengfei.site/post/hugo-v0.99.1/hugo-logo.svg" alt="Hugo" class="img-fluid mb-5"><p>Fix server regression for multihost sites (multiple languages with different baseURLs).</p>
 <p><a href="https://github.com/gohugoio/hugo/releases" target="_blank" rel="noopener">Release Notes on GitHub</a>.</p>
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0-99/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/hugo-v0.99.1/"></a>
                     </div>
                 </div>
 
@@ -606,7 +709,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                     
                         
                             
-                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/bootstrap-5-2-0-beta/bootstrap-5-2-0-beta_hu_97e08038d43e3a99.webp" loading="lazy" width="600" height="300" alt="featured image bootstrap-5-2-0-beta.png">
+                            <img class="img-fluid rounded p-1" src="/yupengfei.site/post/bootstrap-5.2.0-beta/bootstrap-5-2-0-beta_hu_97e08038d43e3a99.webp" loading="lazy" width="600" height="300" alt="featured image bootstrap-5-2-0-beta.png">
                         
                     
                 </div>
@@ -617,7 +720,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
 
                         <div class="card-subtitle text-muted mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="/yupengfei.site/images/feather/feather-sprite.svg#calendar"/></svg>
-                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">January 12, 2026</time>
+                            <time class="ms-2" datetime="2026-01-12T19:04:44&#43;0800">2026年1月12日</time>
 
                             
                                 <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="/yupengfei.site/images/feather/feather-sprite.svg#folder"/></svg>
@@ -640,7 +743,7 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
                             
                         </div>
                         
-                        <a class="stretched-link" href="/yupengfei.site/post/bootstrap-5-2-0-beta/"></a>
+                        <a class="stretched-link" href="/yupengfei.site/post/bootstrap-5.2.0-beta/"></a>
                     </div>
                 </div>
 
@@ -659,10 +762,11 @@ A new <a href="https://gohugo.io/functions/images/#opacity" target="_blank" rel=
       <p class="col-md mb-0 text-muted">Open-source <a class="text-muted text-decoration-none" href="https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE">MIT</a> Licensed.</p>
       <ul class="nav col-md-auto justify-content-end">
         <li class="nav-item"><a href="/yupengfei.site/code-of-conduct/" class="nav-link px-2 text-muted" title='Code of Conduct' aria-label='Code of Conduct'>Code of Conduct</a></li>
-        <li class="nav-item"><a href="/yupengfei.site/privacy-policy/" class="nav-link px-2 text-muted" title='Privacy Policy' aria-label='Privacy Policy'>Privacy Policy</a></li>
+        <li class="nav-item"><a href="/yupengfei.site/privacy-policy/" class="nav-link px-2 text-muted" title='隐私政策' aria-label='隐私政策'>隐私政策</a></li>
         </ul>
     </div>
   </div>
+
 </footer>
     
 
