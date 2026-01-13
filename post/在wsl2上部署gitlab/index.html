@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
+<head><script src="/yupengfei.site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=yupengfei.site/livereload" data-no-instant defer></script>
     
     
 
@@ -11,7 +11,7 @@
 <meta http-equiv='Content-Security-Policy' content="script-src 'self'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
     
 
-<link rel="stylesheet" href="/yupengfei.site/css/style.1dd20a34965d85426a5ead0ff02260179c15b175c5bd5df0ee9db67b5b53791a19e0c8d67d5a71b71e65a2f7a5186e493679949e42610f9baa1039c52a81ef93.css" media="screen" integrity="sha512-HdIKNJZdhUJqXq0P8CJgF5wVsXXFvV3w7p22e1tTeRoZ4MjWfVpxtx5lovelGG5JNnmUnkJhD5uqEDnFKoHvkw==" crossorigin="anonymous">
+<link rel="stylesheet" href="/yupengfei.site/css/style.css" media="screen">
 
     <title>在WSL2上部署Gitlab</title>
 
@@ -19,14 +19,14 @@
   
 
 
-<link rel="canonical" href="https:/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
+<link rel="canonical" href="//localhost:1313/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
 
 
-<link rel="alternate" hreflang="zh-CN" href="https:/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
+<link rel="alternate" hreflang="zh-CN" href="//localhost:1313/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
 
 
 
-<link rel="alternate" hreflang="x-default" href="https:/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
+<link rel="alternate" hreflang="x-default" href="//localhost:1313/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
 
 
 
@@ -48,16 +48,16 @@
 关于frp的部署网上有很多教程，对于AI Agent 给出的部署方案，需要一定的鉴别能力，如果行不通果断看frp的部署教程视频，不要浪费太多时间。
 ">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https:/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
+<meta property="og:url" content="//localhost:1313/yupengfei.site/post/%E5%9C%A8wsl2%E4%B8%8A%E9%83%A8%E7%BD%B2gitlab/">
     
       
-        <meta property="og:image" content="https:/yupengfei.site/images/logo.svg">
+        <meta property="og:image" content="//localhost:1313/yupengfei.site/images/logo.svg">
     
     
       
         
       
-        <meta property="og:image" content="https:/yupengfei.site/images/site-feature-image_hu_4da550a2335ee8d8.png">
+        <meta property="og:image" content="//localhost:1313/yupengfei.site/images/site-feature-image_hu_4da550a2335ee8d8.png">
     
   <meta property="article:section" content="post">
   
@@ -81,7 +81,7 @@
     
       
       <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:image" content="https:/yupengfei.site/images/logo.svg">
+      <meta name="twitter:image" content="//localhost:1313/yupengfei.site/images/logo.svg">
     <meta name="twitter:title" content="在WSL2上部署Gitlab">
 <meta name="twitter:description" content="
 如果WSL2有多个ubuntu，如ubuntu22和ubunut24，只要有一个主机占用了gitlab所需要的端口，就不能正常使用gitlab。
@@ -109,13 +109,13 @@
   "headline": "在WSL2上部署Gitlab",
   "datePublished": "2026-01-05T08:49:37+08:00",
   "dateModified": "2026-01-12T21:37:13+08:00",
-  "mainEntityOfPage": "https:/yupengfei.site/",
+  "mainEntityOfPage": "//localhost:1313/yupengfei.site/",
   "publisher": {
     "@type": "Organization",
     
     "logo": {
       "@type": "ImageObject",
-      "url": "https:/yupengfei.site/images/logo.svg"
+      "url": "//localhost:1313/yupengfei.site/images/logo.svg"
     },
     "name": "技术分享 Public Site"
   },
@@ -137,8 +137,8 @@
 
 
     
-<link rel="icon" type="image/svg+xml" href="https:/yupengfei.site/favicon.svg">
-<link rel="icon" type="image/png" href="https:/yupengfei.site/favicon.png">
+<link rel="icon" type="image/svg+xml" href="//localhost:1313/yupengfei.site/favicon.svg">
+<link rel="icon" type="image/png" href="//localhost:1313/yupengfei.site/favicon.png">
 
 </head>
 
@@ -275,13 +275,10 @@
 
 
 
-<script src="/yupengfei.site/js/bootstrap/bootstrap.bundle.min.min.7620f70f6a288d4f1a662439d8772846a2d2084a9466d8d25b3b246d986b3c96e31aae489aaa01a1961bd6f4ad9842e677b02848d0aae0a3fb74b76a522f9e80.js" integrity="sha512-diD3D2oojU8aZiQ52HcoRqLSCEqUZtjSWzskbZhrPJbjGq5ImqoBoZYb1vStmELmd7AoSNCq4KP7dLdqUi&#43;egA==" crossorigin="anonymous" defer></script>
+<script src="/yupengfei.site/js/bootstrap/bootstrap.bundle.min.js" defer></script>
   
-    <script src="/yupengfei.site/js/main.min.e8d88c82c0438b527f1aca4115652ba1e2877bf805b75593b23ac0e3fe2b3fe95a467d1feef275355132ba061da6404b0d24d55afabc209b294b1db043be014d.js" integrity="sha512-6NiMgsBDi1J/GspBFWUroeKHe/gFt1WTsjrA4/4rP&#43;laRn0f7vJ1NVEyugYdpkBLDSTVWvq8IJspSx2wQ74BTQ==" crossorigin="anonymous" defer></script>
+    <script src="/yupengfei.site/js/main.js" defer></script>
   
-  
-
-
 
 </body>
 </html>
