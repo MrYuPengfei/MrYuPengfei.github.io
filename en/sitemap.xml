@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yupengfei.site/en/en/about/</loc>
+    <loc>/en/en/about/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/authors/</loc>
+    <loc>/en/authors/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/authors/"
+                href="/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/authors/"
+                href="/en/authors/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/en/categories/</loc>
+    <loc>/en/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/categories/"
+                href="/en/categories/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/en/en/</loc>
-    <lastmod>2026-01-13T19:56:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://yupengfei.site/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yupengfei.site/en/en/"
-                />
-  </url><url>
-    <loc>https://yupengfei.site/en/series/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://yupengfei.site/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yupengfei.site/en/series/"
-                />
-  </url><url>
-    <loc>https://yupengfei.site/en/tags/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://yupengfei.site/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yupengfei.site/en/tags/"
-                />
-  </url><url>
-    <loc>https://yupengfei.site/en/</loc>
+    <loc>/en/en/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/"
+                href="/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/"
+                href="/en/en/"
+                />
+  </url><url>
+    <loc>/en/series/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/series/"
+                />
+  </url><url>
+    <loc>/en/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/tags/"
+                />
+  </url><url>
+    <loc>/en/</loc>
+    <lastmod>2026-01-13T19:56:45+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
                 />
   </url>
 </urlset>

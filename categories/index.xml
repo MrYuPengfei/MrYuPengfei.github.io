@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 技术分享 Public Site</title>
-    <link>https://yupengfei.site/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on 技术分享 Public Site</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -10,40 +10,40 @@
     <webMaster>mr_yupengfei@foxmail.com (MrYuPengfei)</webMaster>
     <copyright>Open-source &lt;a class=&#34;text-muted text-decoration-none&#34; href=&#34;https://github.com/MrYuPengfei/MrYuPengfei.github.io/blob/main/LICENSE&#34;&gt;MIT&lt;/a&gt; Licensed.</copyright>
     <lastBuildDate>Tue, 13 Jan 2026 19:56:45 +0800</lastBuildDate>
-    <atom:link href="https://yupengfei.site/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One</title>
-      <link>https://yupengfei.site/categories/one/</link>
+      <link>/categories/one/</link>
       <pubDate>Sat, 01 Mar 2025 20:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https://yupengfei.site/categories/one/</guid>
+      <guid>/categories/one/</guid>
       <description></description>
     </item>
     <item>
       <title>Two</title>
-      <link>https://yupengfei.site/categories/two/</link>
+      <link>/categories/two/</link>
       <pubDate>Sat, 01 Mar 2025 20:49:37 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https://yupengfei.site/categories/two/</guid>
+      <guid>/categories/two/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo Release Notes</title>
-      <link>https://yupengfei.site/categories/hugo-release-notes/</link>
+      <link>/categories/hugo-release-notes/</link>
       <pubDate>Sun, 24 Sep 2023 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https://yupengfei.site/categories/hugo-release-notes/</guid>
+      <guid>/categories/hugo-release-notes/</guid>
       <description></description>
     </item>
     <item>
       <title>The Bootstrap Blog</title>
-      <link>https://yupengfei.site/categories/the-bootstrap-blog/</link>
+      <link>/categories/the-bootstrap-blog/</link>
       <pubDate>Tue, 30 May 2023 00:00:00 +0800</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https://yupengfei.site/categories/the-bootstrap-blog/</guid>
+      <guid>/categories/the-bootstrap-blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo Bootstrap Theme</title>
-      <link>https://yupengfei.site/categories/hugo-bootstrap-theme/</link>
+      <link>/categories/hugo-bootstrap-theme/</link>
       <pubDate>Sun, 22 May 2022 13:35:02 +0100</pubDate><author>mr_yupengfei@foxmail.com (MrYuPengfei)</author>
-      <guid>https://yupengfei.site/categories/hugo-bootstrap-theme/</guid>
+      <guid>/categories/hugo-bootstrap-theme/</guid>
       <description></description>
     </item>
   </channel>

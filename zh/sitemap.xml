@@ -2,311 +2,316 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yupengfei.site/</loc>
-    <lastmod>2026-01-13T20:52:09+08:00</lastmod>
+    <loc>/tags/featured/</loc>
+    <lastmod>2026-01-16T18:03:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/page/matrix-%E8%81%8A%E5%A4%A9%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2026-01-16T18:03:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2026-01-16T18:03:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/"
+                href="/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/"
+                href="/tags/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/post/jams/</loc>
+    <loc>/</loc>
+    <lastmod>2026-01-16T18:03:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="/"
+                />
+  </url><url>
+    <loc>/post/jams/</loc>
     <lastmod>2026-01-13T17:03:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/post/hyperlink%E6%98%AF%E4%BB%80%E4%B9%88/</loc>
+    <loc>/post/hyperlink%E6%98%AF%E4%BB%80%E4%B9%88/</loc>
     <lastmod>2026-01-13T18:06:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/tags/featured/</loc>
-    <lastmod>2026-01-13T19:56:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://yupengfei.site/tags/</loc>
-    <lastmod>2026-01-13T19:56:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yupengfei.site/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://yupengfei.site/tags/"
-                />
-  </url><url>
-    <loc>https://yupengfei.site/page/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
+    <loc>/page/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99/</loc>
     <lastmod>2026-01-13T18:22:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/categories/"
+                href="/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/categories/"
+                href="/categories/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/categories/one/</loc>
+    <loc>/categories/one/</loc>
     <lastmod>2026-01-12T21:41:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/categories/two/</loc>
+    <loc>/categories/two/</loc>
     <lastmod>2026-01-12T21:41:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/page/virtual-partners/</loc>
+    <loc>/page/virtual-partners/</loc>
     <lastmod>2026-01-12T21:41:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/post/%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/</loc>
+    <loc>/post/%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/</loc>
     <lastmod>2026-01-13T18:39:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/</loc>
+    <loc>/post/%E5%9C%A8wsl2%E6%9E%84%E5%BB%BA-gitlab-%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93/</loc>
     <lastmod>2026-01-13T18:41:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/authors/</loc>
+    <loc>/authors/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/authors/"
+                href="/en/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/authors/"
+                href="/authors/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/authors/bj%C3%B8rn-erik-pedersen/</loc>
+    <loc>/authors/bj%C3%B8rn-erik-pedersen/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/</loc>
+    <loc>/en/</loc>
     <lastmod>2026-01-13T20:52:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/en/"
+                href="/en/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/en/"
+                href="/en/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/tags/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/categories/hugo-release-notes/</loc>
+    <loc>/categories/hugo-release-notes/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/hugo-v0-119/</loc>
+    <loc>/en/post/hugo-v0-119/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/tags/bootstrap/</loc>
+    <loc>/tags/bootstrap/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/bootstrap-5-3-0/</loc>
+    <loc>/en/post/bootstrap-5-3-0/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/authors/mark-otto/</loc>
+    <loc>/authors/mark-otto/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/categories/the-bootstrap-blog/</loc>
+    <loc>/categories/the-bootstrap-blog/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/hugo-v0-100/</loc>
+    <loc>/en/post/hugo-v0-100/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/authors/filipe-carneiro/</loc>
+    <loc>/authors/filipe-carneiro/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/categories/hugo-bootstrap-theme/</loc>
+    <loc>/categories/hugo-bootstrap-theme/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/hugo-bootstrap-theme/</loc>
+    <loc>/en/post/hugo-bootstrap-theme/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/hugo-v0-99/</loc>
+    <loc>/en/post/hugo-v0-99/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/page/bootstrap-carousel/</loc>
+    <loc>/en/page/bootstrap-carousel/</loc>
     <lastmod>2026-01-13T19:56:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/page/bootstrap-components/</loc>
+    <loc>/en/page/bootstrap-components/</loc>
     <lastmod>2026-01-13T19:56:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/code-of-conduct/</loc>
+    <loc>/code-of-conduct/</loc>
     <lastmod>2026-01-13T19:13:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/code-of-conduct/</loc>
+    <loc>/en/code-of-conduct/</loc>
     <lastmod>2026-01-13T20:52:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/contact/</loc>
+    <loc>/en/contact/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/page/</loc>
+    <loc>/en/page/</loc>
     <lastmod>2026-01-13T19:56:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/page/</loc>
+    <loc>/page/</loc>
     <lastmod>2026-01-12T21:43:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/author/filipe-carneiro/</loc>
+    <loc>/en/author/filipe-carneiro/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/authors/filipe-carneiro/</loc>
+    <loc>/en/authors/filipe-carneiro/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/tags/index/</loc>
+    <loc>/tags/index/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/page/markdown-cheat-sheet/</loc>
+    <loc>/en/page/markdown-cheat-sheet/</loc>
     <lastmod>2026-01-13T19:56:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/author/mryupengfei/</loc>
+    <loc>/en/author/mryupengfei/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/post/</loc>
+    <loc>/en/post/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2026-01-13T18:43:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/tags/privacy/</loc>
+    <loc>/tags/privacy/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/privacy-policy/</loc>
+    <loc>/en/privacy-policy/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/en/page/security-best-practices/</loc>
+    <loc>/en/page/security-best-practices/</loc>
     <lastmod>2026-01-13T19:56:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/series/</loc>
+    <loc>/series/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://yupengfei.site/en/series/"
+                href="/en/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="https://yupengfei.site/series/"
+                href="/series/"
                 />
   </url><url>
-    <loc>https://yupengfei.site/authors/yu-pengfei/</loc>
+    <loc>/authors/yu-pengfei/</loc>
     <lastmod>2026-01-12T21:43:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2026-01-12T21:47:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/contact/</loc>
+    <loc>/contact/</loc>
     <lastmod>2026-01-13T19:38:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/tags/%E9%9A%90%E7%A7%81/</loc>
+    <loc>/tags/%E9%9A%90%E7%A7%81/</loc>
     <lastmod>2026-01-13T12:35:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://yupengfei.site/privacy-policy/</loc>
+    <loc>/privacy-policy/</loc>
     <lastmod>2026-01-13T12:35:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
